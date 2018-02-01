@@ -1,0 +1,128 @@
+/* line 1, ../sass/1-base/_base.scss */
+body {
+  font-family: Montserrat;
+  color: #777777;
+  font-size: 14px;
+}
+
+/* line 6, ../sass/1-base/_base.scss */
+p {
+  font-family: RobotoSlab;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+/* line 1, ../sass/2-layout/_nav.scss */
+.navbar {
+  height: 115px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+/* line 6, ../sass/2-layout/_nav.scss */
+.navbar li a, .navbar {
+  color: #777777;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+/* line 11, ../sass/2-layout/_nav.scss */
+.navbar-default {
+  background-color: #ffffff;
+}
+
+/* line 14, ../sass/2-layout/_nav.scss */
+.navbar-toggle {
+  background-color: #cccccc;
+}
+
+/* line 17, ../sass/2-layout/_nav.scss */
+.container-fluid {
+  margin-top: 30px;
+  padding: 0px;
+  width: 70%;
+}
+
+/* line 23, ../sass/2-layout/_nav.scss */
+.navbar-brand {
+  padding: 10px 0px 13px;
+}
+
+/*@media (max-width:800px) {
+    .container-fluid{
+    .navbar-collapse
+      {
+      margin-left: 0px;
+      margin-right: 0px;
+      }
+    }
+}
+
+@media (max-width: 800px){
+    .container>.navbar-collapse, .container>.navbar-header
+  {
+    margin-right: 0;
+    margin-left: 0;
+}
+}*/
+/* line 1, ../sass/3-modules/_components.scss */
+.jumbotron {
+  height: 530px;
+  background-image: url(/home/sachin/Desktop/treehouse/images/Background.jpg);
+  background-color: #000000;
+  margin-top: 115px;
+  padding: 100px 200px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 35px;
+}
+/* line 11, ../sass/3-modules/_components.scss */
+.jumbotron h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+/* line 15, ../sass/3-modules/_components.scss */
+.jumbotron p {
+  color: #cccccc;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* line 1, ../sass/3-modules/_buttons.scss */
+.buttons {
+  height: 60px;
+  border-radius: 30px !important;
+  font-size: 12px !important;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+  background-color: #7cc576 !important;
+  width: 200px !important;
+  width: 168px;
+}
+
+/* line 2, ../sass/3-modules/_sections.scss */
+section h2 {
+  font-weight: 700;
+  color: #222222;
+  font-size: 40px;
+}
+/* line 7, ../sass/3-modules/_sections.scss */
+section h4 {
+  font-size: 18px;
+  color: #222222;
+  font-weight: 700;
+}
+/* line 12, ../sass/3-modules/_sections.scss */
+section #p2 {
+  font-size: 20px;
+  font-weight: 400;
+}
