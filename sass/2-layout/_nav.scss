@@ -1,0 +1,41 @@
+.navbar{
+    height: 115px;
+    margin: 0px;
+}
+.navbar li a, .navbar{
+    color: #777777;
+    font-size: 14px !important;
+    font-weight: 400!important;
+}
+.navbar-default{
+    background-color: #ffffff;
+  }
+.navbar-toggle{
+    background-color: #cccccc;
+}
+.container-fluid{
+    margin-top: 30px;
+    padding: 0px;
+    width: 70%;
+
+  }
+.navbar-brand{
+    padding: 10px 0px 13px;
+}
+/*@media (max-width:800px) {
+    .container-fluid{
+    .navbar-collapse
+      {
+      margin-left: 0px;
+      margin-right: 0px;
+      }
+    }
+}
+
+@media (max-width: 800px){
+    .container>.navbar-collapse, .container>.navbar-header
+  {
+    margin-right: 0;
+    margin-left: 0;
+}
+}*/
