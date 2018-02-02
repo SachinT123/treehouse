@@ -1,0 +1,14 @@
+.button-fluid{
+  height: 60px;
+  border-radius: 30px!important;
+  border-style: none;
+  font-size: 12px!important;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.7);
+  background-color: #7cc576!important;
+  @if (id:'#1') {
+    width: 200px!important;
+  }
+  width: 168px;
+}
