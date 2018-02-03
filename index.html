@@ -14,15 +14,16 @@
 
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!--Navigation bar and header-->
 	<nav class="navbar navbar-default ">
-  	<div class="container-fluid">
+  		<div class="container-fluid">
     	<div class="navbar-header">
     		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         	<span class="icon-bar"></span>
         	<span class="icon-bar"></span>
         	<span class="icon-bar"></span>
       	</button>
-      	<a class="navbar-brand" href="#myPage"><img src="images/Logo.jpg"></a>
+      	<a class="navbar-brand" href="#myPage"><img src="images/Logo.jpg" class="img-resposive"></a>
     	</div>
     	<div class="collapse navbar-collapse" id="myNavbar">
       	<ul class="nav navbar-nav navbar-right">
@@ -33,65 +34,105 @@
 					<li><a href="#contact">CONTACT</a></li>
       	</ul>
     	</div>
-  	</div>
+  		</div>
 	</nav>
 
-<div class="container-fluid" id="jumbo">
-    <img src="images/Background.jpg">
-    <div class="centered">
-    <h1>CREATIVE DIGITAL SOLUTIONS</h1> 
-    <p>Proin iaculis purus consequat sem cure.</p> 
-    <br>
-    <button class="button-fluid" id="1">VIEW PORTFOLIO</button>
-  </div>
-</div>
+<!--Title section-->
+	<div class="container-fluid" id="jumbo">
+	    <img src="images/Background.jpg" class="img-responsive" id="back1">
+	    <h1 id="header1">CREATIVE DIGITAL SOLUTIONS</h1>
+	    <p id="p1">Proin iaculis purus consequat sem cure.</p> 
+	    <div id="button1"><button class="button" id="1">VIEW PORTFOLIO</button></div>
+	</div>
 
-<section id="services" class="container-fluid text-center">
-    <h2>PROFESSIONAL SERVICES</h2>
-    <p class="subtitle_text" id="p2"> Proin iaculis purus consequat sem cure.</p>
-    <br><br><br><br>
-    <div class="row slideanim">
-      <div class="col-sm-4">
-        <div class="icons">
-          <img src="images/Icon-Heart.jpg">
-          <h4>BEAUTIFUL DESIGNS</h4>
-          <p>Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt</p>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="icons">
-          <img src="images/Icon-Mobile.jpg">
-          <h4>RESPONSIVE WEB</h4>
-          <p>Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt</p>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="icons">
-          <img src="images/Icon-Graph.jpg">
-          <h4>MARKETING TOOLS</h4>
-          <p>Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt</p>
-        </div>
-      </div>
-    </div>
-</section>
-  <div class="container-fluid" id="back2">
-      <img src="images/gear2.png" class="image-fluid" id="image1">
-      <div id="back"><img src="images/Background2.jpg" class="image-fluid" id="image2">
-      <span id="spanheader">
-      	<h2>JUST RELAX <span id="and">&</span><br>LET US DO THE HEAVY LIFTING</h2>
-      </span>
-      <span id="spandesc"><p>Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt
-      <ul>
-      	<li>Initial setup & customizations</li>
-      	<li>Regular updates</li>
-      	<li>Round the clock support</li>
-      </ul>
-      </p>
-      </span>
-      </div>
-      
-  </div>
-  
+<!--Professional services-->
+	<div id="services" class="container-fluid text-center">
+	    <h2>PROFESSIONAL SERVICES</h2>
+	    <p class="subtitle_text" id="p2"> Proin iaculis purus consequat sem cure.</p>
+	    <br><br><br>
+	    <div class="row slideanim">
+	      <div class="col-md-4">
+	        <div class="icons">
+	          <img src="images/Icon-Heart.jpg" class="img-responsive">
+	          <h4>BEAUTIFUL DESIGNS</h4>
+	          <p>Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt</p>
+	        </div>
+	      </div>
+	      <div class="col-md-4">
+	        <div class="icons">
+	          <img src="images/Icon-Mobile.jpg" class="img-responsive">
+	          <h4>RESPONSIVE WEB</h4>
+	          <p>Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt</p>
+	        </div>
+	      </div>
+	      <div class="col-sm-4">
+	        <div class="icons">
+	          <img src="images/Icon-Graph.jpg" class="img-responsive">
+	          <h4>MARKETING TOOLS</h4>
+	          <p>Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt</p>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+
+<!--Just relax section-->
+	<div class="container-fluid" id="back2">
+	    <img src="images/gear2.png" class="img-responsive" id="image1">
+	    <div id="back">
+	    	<img src="images/Background2.jpg" class="img-responsive" id="image2">
+	     	<h2 id="header2">JUST RELAX <span id="and">&</span><br>LET US DO THE HEAVY LIFTING</h2>
+	     	<div id="desc2"><br>
+	     		<p>Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+	     		<br>
+	     		<ul>
+	     			<li><img src="images/Checkmark-1.png" class="img-responsive">&nbsp&nbsp&nbsp&nbsp&nbspInitial setup & customizations</li>
+	     			<li><img src="images/Checkmark-1.png" class="img-responsive">&nbsp&nbsp&nbsp&nbsp&nbspRegular updates</li>
+	     			<li><img src="images/Checkmark-1.png" class="img-responsive">&nbsp&nbsp&nbsp&nbsp&nbspRound the clock support</li>
+	     		</ul>   
+	     		<br>
+	     		<button class="button" id="2">LEARN MORE</button>   
+	     	</div>
+	    </div>   
+	</div>
+
+<!--latest projects section-->
+	<div class="container-fluid" id="latest_project">
+		<section id="header3">
+			<h2>LATEST PROJECT</h2>
+			<p class="subtitle_text">Proin iaculis purus consequat sem cure</p>
+		</section>
+		<div class="row" id="subhead">
+			<div class="col-xs-2"></div>
+			<div class="col-xs-4">
+				<h4>DEVELOPOING A FRAMEWORK</h4>
+				<p>Proin iaculis purus consequat sem cure digni ssim donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt</p>
+				<div class="row">
+					<div class="col-sm-2" class="icons"><img src="images/Icon-Basket.png" class="img-responsive"></div>
+					<div class="col-xs-10">
+						<h4 class="subhead">E-Commerce Ready</h4>
+						<p>Proin iaculis purus consequat sem cure digni ssim.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2" class="icons"><img src="images/Icon-Laptop.png" class="img-responsive"></div>
+					<div class="col-xs-10">
+						<h4 class="subhead">Powerful SEO Features</h4>
+						<p>Proin iaculis purus consequat sem cure.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2" class="icons"><img src="images/Icon-Locked.png" class="img-responsive"></div>
+					<div class="col-xs-10">
+						<h4 class="subhead">Secure Encryption</h4>
+						<p>Proin iaculis purus consequat sem cure iaculis purus.</p>
+					</div>
+				</div>
+				<p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entm suscipit aenean rhoncus posuere odio in.</p>
+			</div>
+			<div class="col-xs-6"><img src="images/tphone.jpg" id="tphone" class="img-responsive"></div>
+		</div>
+
+	</div>
 
 
 

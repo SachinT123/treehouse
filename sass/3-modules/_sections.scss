@@ -1,5 +1,7 @@
+//services section
 #services{
   padding: 80px 0px;
+  position: relative;
   h2{
     font-weight: 700;
     color: #222222;
@@ -12,72 +14,50 @@
   }
   #p2{
     font-size: 20px;
-    font-weight: 400;
+  }
+  img{
+    display: inline-block;
   }
 }
-#back2{
-  height: 616px;
-  background-color: #e9e9e9;
-  margin: 0;
+
+//latest project section
+#latest_project{
+  margin: 0px;
+  padding: 8% 0 0 0;
+  position: relative;
   width: 100%;
-
-  #image1{
-    width: 379px;
-    z-index: 0;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-left: 200px;
-    position: absolute;
+  #header3{
+    text-align: center;
+    padding-bottom: 4.5%;
+    h2{
+      font-size: 40px;
+      color: #222222;
+      font-weight: 700;
+    }
+    .subtitle_text{
+      font-size: 20px;
+      font-weight: 400;
+    }
   }
-  #back{
-    width: 69.3%;
+  p{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: #222222;
+  }
+  .icons{
+    text-align: center;
+    border-width: 3px;
     height: 100%;
-    z-index: 9;
-    float: right;
-    position: relative;
-    background-color: #000000;
-    #image2{
-      width: 100%;
-      height: 100%;
-      z-index: 9;
-      opacity: 0.6;
-      position: absolute;
-    }
-    #spanheader{
-      margin-left: 100px;
-      margin-top: 100px;
-      padding: 0;
-      width: auto;
-      height: auto;
-      text-align: left;
-      float: left;
-      z-index: inherit;
-      position: relative;
-      h2{
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 40px;
-        #and{
-          color: #7cc576;
-        }
-      }
-    }
-    #spandesc{
-      font-size: 16px;
-      color: #cccccc;
-      margin-left: 100px;
-      padding: 0;
-      width: auto;
-      height: auto;
-      text-align: left;
-      float: left;
-      z-index: inherit;
-      position: relative;
-      ul{
-        font-family: RobotoSlab;
-        list-style-image: url(../images/Checkmark-1.png);
-      }
-    }
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #000000;
   }
-
+  #tphone{
+    width: 100%;
+    height: auto;
+  }
 }
