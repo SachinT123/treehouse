@@ -111,15 +111,16 @@
         padding-left: 0;
         padding-bottom: 4%;
         li{
-          height: 37px;
+          height: 40px;
+          padding-bottom: 12%;
           img{
-            border-radius: 100%;
+            border-radius: 50%;
             border-style: solid;
-            width: 7.2%;
-            padding: 1.6%;
+            width: 9.6%;
+            padding: 2.5%;
             display: inline-block;
             border-color: #cccccc;
-            border-width: thin;
+            border-width: 2px;
           }
         }
       }

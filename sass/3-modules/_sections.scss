@@ -39,6 +39,12 @@
       font-weight: 400;
     }
   }
+  #subhead{
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 0 4%;
+  }
   p{
     font-size: 16px;
     font-weight: 400;
@@ -47,17 +53,39 @@
     font-size: 18px;
     font-weight: 700;
     color: #222222;
+    margin-bottom: 0;
+    a{
+      font-size: 18px;
+      font-weight: 700;
+      font-size: 16px;
+      color: #7cc576;
+      img{
+        display: inline;
+        vertical-align: baseline;
+        margin-top: 10%;
+      }
+    }
   }
-  .icons{
-    text-align: center;
-    border-width: 3px;
-    height: 100%;
-    border-style: solid;
+  section{
+    margin: 0;
+    border-spacing: 2px;
+    width: 14.5%;
+    height: 57px;
+    padding: 2.5% 3.5%;
+    float: left;
+    border: solid 3px #000000;
     border-radius: 50%;
-    border-color: #000000;
   }
+  .features{
+    padding-left: 2%;
+    float: left;
+  }
+
   #tphone{
-    width: 100%;
-    height: auto;
+    img{
+      width: 100%;
+      height: auto;
+    }
   }
+}
 }

@@ -190,19 +190,20 @@ p {
 }
 /* line 113, ../sass/3-modules/_components.scss */
 #back2 #back #desc2 ul li {
-  height: 37px;
+  height: 40px;
+  padding-bottom: 12%;
 }
-/* line 115, ../sass/3-modules/_components.scss */
+/* line 116, ../sass/3-modules/_components.scss */
 #back2 #back #desc2 ul li img {
-  border-radius: 100%;
+  border-radius: 50%;
   border-style: solid;
-  width: 7.2%;
-  padding: 1.6%;
+  width: 9.6%;
+  padding: 2.5%;
   display: inline-block;
   border-color: #cccccc;
-  border-width: thin;
+  border-width: 2px;
 }
-/* line 126, ../sass/3-modules/_components.scss */
+/* line 127, ../sass/3-modules/_components.scss */
 #back2 #back #desc2 button {
   width: 41.5%;
 }
@@ -276,28 +277,55 @@ p {
   font-size: 20px;
   font-weight: 400;
 }
-/* line 42, ../sass/3-modules/_sections.scss */
-#latest_project p {
+/* line 43, ../sass/3-modules/_sections.scss */
+#latest_project #subhead .row {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 0 4%;
+}
+/* line 48, ../sass/3-modules/_sections.scss */
+#latest_project #subhead p {
   font-size: 16px;
   font-weight: 400;
 }
-/* line 46, ../sass/3-modules/_sections.scss */
-#latest_project h4 {
+/* line 52, ../sass/3-modules/_sections.scss */
+#latest_project #subhead h4 {
   font-size: 18px;
   font-weight: 700;
   color: #222222;
+  margin-bottom: 0;
 }
-/* line 51, ../sass/3-modules/_sections.scss */
-#latest_project .icons {
-  text-align: center;
-  border-width: 3px;
-  height: 100%;
-  border-style: solid;
+/* line 57, ../sass/3-modules/_sections.scss */
+#latest_project #subhead h4 a {
+  font-size: 18px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #7cc576;
+}
+/* line 62, ../sass/3-modules/_sections.scss */
+#latest_project #subhead h4 a img {
+  display: inline;
+  vertical-align: baseline;
+  margin-top: 10%;
+}
+/* line 69, ../sass/3-modules/_sections.scss */
+#latest_project #subhead section {
+  margin: 0;
+  border-spacing: 2px;
+  width: 14.5%;
+  height: 57px;
+  padding: 2.5% 3.5%;
+  float: left;
+  border: solid 3px #000000;
   border-radius: 50%;
-  border-color: #000000;
 }
-/* line 59, ../sass/3-modules/_sections.scss */
-#latest_project #tphone {
+/* line 79, ../sass/3-modules/_sections.scss */
+#latest_project #subhead .features {
+  padding-left: 2%;
+  float: left;
+}
+/* line 85, ../sass/3-modules/_sections.scss */
+#latest_project #subhead #tphone img {
   width: 100%;
   height: auto;
 }
