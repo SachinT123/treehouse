@@ -1,11 +1,7 @@
 //services section
 #services{
   padding: 5.4% 0;
-  h2{
-    font-weight: 700;
-    color: #222222;
-    font-size: 40px;
-  }
+  width: 67%;
   h4{
     font-size: 18px;
     color: #222222;
@@ -14,8 +10,14 @@
   #p2{
     font-size: 20px;
   }
-  img{
-    display: inline-block;
+  .row{
+    padding-top: 8%;
+    .icons{
+      height: 77px;
+    }
+    img{
+      display: inline-block;
+    }
   }
 }
 
@@ -28,58 +30,177 @@
   #header3{
     text-align: center;
     padding-bottom: 4.5%;
-    h2{
-      font-size: 40px;
-      color: #222222;
-      font-weight: 700;
-    }
     .subtitle_text{
       font-size: 20px;
       font-weight: 400;
     }
   }
   #subhead{
-  .row{
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0 0 4%;
-  }
-  p{
-    font-size: 16px;
-    font-weight: 400;
-  }
-  h4{
-    font-size: 18px;
-    font-weight: 700;
-    color: #222222;
-    margin-bottom: 0;
-    a{
-      font-size: 18px;
-      font-weight: 700;
-      font-size: 16px;
-      color: #7cc576;
-      img{
-        display: inline;
-        vertical-align: baseline;
-        margin-top: 10%;
+    margin-left: 16%;
+    #grid2{
+      display: grid;
+      grid-template-columns: 16% auto;
+      .grid2-items{
+          border-radius: 50%;
+          border-style: solid;
+          padding: 17%;
+          margin-bottom: 25%;
+          border-color: #000000;
+          border-width: 3px;
+          #icon1{
+            padding: 1%;
+          }
+          #icon3{
+            padding: 0 11%;
+          }
       }
     }
+    p{
+      font-size: 16px;
+      font-weight: 400;
+    }
+    h4{
+      font-size: 18px;
+      font-weight: 700;
+      color: #222222;
+      margin-bottom: 0;
+      a{
+        font-size: 18px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #7cc576;
+        img{
+          display: inline;
+          vertical-align: baseline;
+          margin-top: 7%;
+        }
+      }
+    }
+    .features{
+      padding: 1.7% 0 0 5.3%;
+      float: left;
+    }
   }
-  section{
-    margin: 0;
-    border-spacing: 2px;
-    width: 14.5%;
-    height: 57px;
-    padding: 2.5% 3.5%;
-    float: left;
-    border: solid 3px #000000;
+}
+
+//culture and values section
+#culture{
+  background-color: #f9f9f9;
+  margin: 0%;
+  width: -webkit-fill-available;
+  padding: 7.5% 15%;
+  h4{
+    font-size: 18px;
+    color: #222222;
+    font-weight: 700;
+  }
+  #p3{
+    font-size: 20px;
+  }
+  .values{
+    padding-top: 5%;
+    .icons{
+        text-align: center;
+        position: relative;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: #777777;
+        padding: 5.5%;
+        display: inline-block;
+    }
+    .icon2{
+      padding: 5.5% 7.5%;
+    }
+    .icon1::after{
+      content: "";
+        position: absolute;
+        border-top: 2px solid;
+        top: 45%;
+        width: 200%;
+        left: 150%;
+    }
+    .icon2::after{
+      content: "";
+        position: absolute;
+        border-top: 2px solid;
+        top: 45%;
+        width: 200%;
+        left: 150%;
+    }
+  }
+}
+
+//clients
+#clients{
+  margin: 7.2% 16.3%;
+  #p4{
+    font-size: 20px;
+  }
+  p{
+    font-size: 22px;
+  }
+  .clientname{
+    color: #7cc576;
+    font-size: 18px;
+  }
+  #grid3{
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: 25% auto;
+    #grid3-item1{
+      background: #f9f9f9;
+      border-radius: 50%;
+    }
+    #grid3-item2{
+        padding: 4.5% 6%;
+    }
+  #tooltext1{
+    position: relative;
+    background: #f9f9f9;
+    padding: 5.5% 8%;
+  }
+  #tooltext1::after{
+    content: '';
+    position: absolute;
+    left: -4.2%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-right-color: #f9f9f9;
+    border-left: 0;
+    margin-top: -4.5%;
+    margin-left: 0;
+  }
+  }
+  #grid4{
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: auto 25%;
+  #grid4-item2{
+    background: #f9f9f9;
     border-radius: 50%;
   }
-  .features{
-    padding-left: 2%;
-    float: left;
+  #grid4-item1{
+    padding: 4.5% 6%;
   }
-
-
-}
+  #tooltext2{
+    position: relative;
+    background: #f9f9f9;
+    padding: 5.5% 8%;
+  }
+  #tooltext2::after{
+    content: '';
+    position: absolute;
+    right: -4.2%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-left-color: #f9f9f9;
+    border-right: 0;
+    margin-top: -4.5%;
+    margin-right: 0;
+  }
+  }
 }
