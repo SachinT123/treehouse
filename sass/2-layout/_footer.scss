@@ -1,14 +1,16 @@
 //top-footer
-#topfooter{
-  background-color: #222222;
-  color: #ececec;
-  padding: 4% 21%;
+.topfooter{
+  background-color: $opaque2;
+  color: $footercolor;
+  font-size: 16px;
+  padding: 4em 14em;
   .columns{
+      padding-bottom: 1.5em;
       header{
         background-color: inherit;
-        color: #ffffff;
+        color: $white;
         font-weight: 700;
-        padding-bottom: 12%;
+        padding-bottom: 1.2em;
       }
       .grid-container-fluid{
         display: grid;
@@ -18,7 +20,7 @@
           text-align: center;
         }
         p{
-          padding-left: 2%;
+          padding-left: 0.4em;
           .quote{
             font-weight: 700;
           }
@@ -30,28 +32,62 @@
     }
     #col2,#col3{
       .i2+div:hover{
-          color: #7cc576;
+          color: $green;
         }
+    }
+    @media screen and (max-width: 1024px){
+      font-size: 15px;
+      padding: 3em 8em;
+      .mini{font-size: 13px;}
+    }
+    @media screen and (max-width: 768px){
+      font-size: 12px;
+      padding: 3em 5em;
+      .mini{font-size: 10px;}
+    }
+    @media screen and (max-width: 425px){
+      font-size: 16px;
+      .mini{font-size: 12px;}
+    }
+    @media screen and (max-width: 375px){
+      font-size: 14px;
+      .mini{font-size: 11px;}
     }
 }
 
 //bottom footer
-#footer{
-  padding: 3% 2.5%;
+.bottom_footer{
+  padding: 2em 10em;
   margin-top: 0;
-  span{
+  text-align: center;
+  .Copyright{
+    padding-top: 1em;
     font-size: 14px;
   }
   .follow{
-    padding-left: 10%;
-    display: inline;
-    grid-template-columns: auto auto auto auto;
-    .fa{
-      color: #ffffff;
-      width: 4%;
-      padding: 1.5%;
-      background-color: #222222;
+    div{
+      height: 2.75em;
+      color: $white;
+      width: 2.75em;
+      padding: 1em 0.8em;
+      background-color: $opaque2;
       border-radius: 50%;
     }
+  }
+  @media screen and (max-width: 1024px){
+    .Copyright{font-size: 12px;}
+    padding: 2em 7em;
+  }
+  @media screen and (max-width: 768px){
+    .Copyright{font-size: 11px;}
+    padding: 2em 7em;
+  }
+  @media screen and (max-width: 425px){
+    .Copyright{font-size: 10px; padding-bottom: 1em;}
+    padding: 1em 3em;
+  }
+  @media screen and (max-width: 375px){
+    .Copyright{font-size: 10px;}
+    padding: 1em 2em;
   }
 }
