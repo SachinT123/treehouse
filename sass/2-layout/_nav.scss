@@ -18,14 +18,14 @@
     .navbar-brand{
       color: #555555;
       font-weight: 700;
-      padding: 7% 0 0 0;
-      width: auto;
+      margin-left: 10% !important;
+      padding: 4% 0 0 0;
+      width: 200px;
       img{
         display: inline;
         border-radius: 50%;
-        width: 20%;
         background: #7cc576;
-        padding: 5% 5.5% 4.5% 5.5%;
+        padding: 5% 4.5% 3.5% 4.5%;
       }
     }
 }
