@@ -390,12 +390,12 @@
     height: 20em;
     #image1{
       visibility: hidden;
-      width: 12em;
+      width: auto;
       padding: 3.5em 0;
       margin-left: 0;
     }
     #back{
-      width: 24em;
+      width: 100%;
       #header2{
         font-size: 20px;
         margin-left: 2em;

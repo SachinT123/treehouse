@@ -677,13 +677,13 @@ p {
   /* line 391, ../sass/3-modules/_components.scss */
   #back2 #image1 {
     visibility: hidden;
-    width: 12em;
+    width: auto;
     padding: 3.5em 0;
     margin-left: 0;
   }
   /* line 397, ../sass/3-modules/_components.scss */
   #back2 #back {
-    width: 24em;
+    width: 100%;
   }
   /* line 399, ../sass/3-modules/_components.scss */
   #back2 #back #header2 {
@@ -1799,11 +1799,11 @@ p {
   height: 14em;
   width: 14em;
 }
-/* line 542, ../sass/3-modules/_sections.scss */
+/* line 543, ../sass/3-modules/_sections.scss */
 #clients .grid .item2, #clients .grid .item3 {
   padding: 1.25em 2em 1.25em 4em;
 }
-/* line 544, ../sass/3-modules/_sections.scss */
+/* line 545, ../sass/3-modules/_sections.scss */
 #clients .grid .item2 .tooltext, #clients .grid .item3 .tooltext {
   width: auto;
   height: auto;
@@ -1812,7 +1812,7 @@ p {
   background: #f9f9f9;
   padding: 2.5em 3.25em;
 }
-/* line 554, ../sass/3-modules/_sections.scss */
+/* line 555, ../sass/3-modules/_sections.scss */
 #clients .grid .item2 .tooltext::after {
   content: '';
   position: absolute;
@@ -1826,7 +1826,7 @@ p {
   transform: translateY(-50%);
   margin-left: 0;
 }
-/* line 569, ../sass/3-modules/_sections.scss */
+/* line 570, ../sass/3-modules/_sections.scss */
 #clients .grid .item3 .tooltext::after {
   content: '';
   position: absolute;
@@ -1841,7 +1841,7 @@ p {
   margin-right: 0;
 }
 @media screen and (max-width: 1440px) {
-  /* line 585, ../sass/3-modules/_sections.scss */
+  /* line 586, ../sass/3-modules/_sections.scss */
   #clients h2 {
     font-size: 40px;
   }
@@ -1852,32 +1852,32 @@ p {
     width: 48em;
     padding: 5em 0;
   }
-  /* line 589, ../sass/3-modules/_sections.scss */
+  /* line 590, ../sass/3-modules/_sections.scss */
   #clients h2 {
     font-size: 30px;
   }
-  /* line 590, ../sass/3-modules/_sections.scss */
+  /* line 591, ../sass/3-modules/_sections.scss */
   #clients .subtitle_text {
     font-size: 20px;
   }
-  /* line 591, ../sass/3-modules/_sections.scss */
+  /* line 592, ../sass/3-modules/_sections.scss */
   #clients .text {
     font-size: 20px;
   }
-  /* line 592, ../sass/3-modules/_sections.scss */
+  /* line 593, ../sass/3-modules/_sections.scss */
   #clients .clientname {
     font-size: 15px;
   }
-  /* line 596, ../sass/3-modules/_sections.scss */
+  /* line 597, ../sass/3-modules/_sections.scss */
   #clients .grid .item1 .item, #clients .grid .item4 .item {
     width: 11em;
     height: 11em;
   }
-  /* line 598, ../sass/3-modules/_sections.scss */
+  /* line 599, ../sass/3-modules/_sections.scss */
   #clients .grid .item2, #clients .grid .item3 {
     padding: 1em 2em 1em 3em;
   }
-  /* line 600, ../sass/3-modules/_sections.scss */
+  /* line 601, ../sass/3-modules/_sections.scss */
   #clients .grid .item2 .tooltext, #clients .grid .item3 .tooltext {
     padding: 1.5em 2em;
   }
@@ -1888,32 +1888,32 @@ p {
     width: 45em;
     padding: 4em 0;
   }
-  /* line 606, ../sass/3-modules/_sections.scss */
+  /* line 607, ../sass/3-modules/_sections.scss */
   #clients h2 {
     font-size: 28px;
   }
-  /* line 607, ../sass/3-modules/_sections.scss */
+  /* line 608, ../sass/3-modules/_sections.scss */
   #clients .subtitle_text {
     font-size: 19px;
   }
-  /* line 608, ../sass/3-modules/_sections.scss */
+  /* line 609, ../sass/3-modules/_sections.scss */
   #clients .text {
     font-size: 17px;
   }
-  /* line 609, ../sass/3-modules/_sections.scss */
+  /* line 610, ../sass/3-modules/_sections.scss */
   #clients .clientname {
     font-size: 15px;
   }
-  /* line 613, ../sass/3-modules/_sections.scss */
+  /* line 614, ../sass/3-modules/_sections.scss */
   #clients .grid .item1 .item, #clients .grid .item4 .item {
     width: 11em;
     height: 11em;
   }
-  /* line 615, ../sass/3-modules/_sections.scss */
+  /* line 616, ../sass/3-modules/_sections.scss */
   #clients .grid .item2, #clients .grid .item3 {
     padding: 1em;
   }
-  /* line 617, ../sass/3-modules/_sections.scss */
+  /* line 618, ../sass/3-modules/_sections.scss */
   #clients .grid .item2 .tooltext, #clients .grid .item3 .tooltext {
     padding: 1.5em 2em;
   }
@@ -1924,40 +1924,40 @@ p {
     width: 28em;
     padding: 4em 0;
   }
-  /* line 624, ../sass/3-modules/_sections.scss */
+  /* line 625, ../sass/3-modules/_sections.scss */
   #clients .grid .tooltext::after {
     visibility: hidden;
   }
-  /* line 626, ../sass/3-modules/_sections.scss */
+  /* line 627, ../sass/3-modules/_sections.scss */
   #clients .grid .item2 .tooltext, #clients .grid .item3 .tooltext {
     padding: 1.5em;
   }
-  /* line 629, ../sass/3-modules/_sections.scss */
+  /* line 630, ../sass/3-modules/_sections.scss */
   #clients .subtitle_text {
     font-size: 16px;
   }
-  /* line 630, ../sass/3-modules/_sections.scss */
+  /* line 631, ../sass/3-modules/_sections.scss */
   #clients .text {
     font-size: 16px;
   }
-  /* line 631, ../sass/3-modules/_sections.scss */
+  /* line 632, ../sass/3-modules/_sections.scss */
   #clients .clientname {
     font-size: 13px;
   }
-  /* line 633, ../sass/3-modules/_sections.scss */
+  /* line 634, ../sass/3-modules/_sections.scss */
   #clients h2 {
     font-size: 26px;
   }
-  /* line 634, ../sass/3-modules/_sections.scss */
+  /* line 635, ../sass/3-modules/_sections.scss */
   #clients #grid2 {
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 637, ../sass/3-modules/_sections.scss */
+  /* line 638, ../sass/3-modules/_sections.scss */
   #clients #grid2 .item3 {
     order: 2;
   }
-  /* line 640, ../sass/3-modules/_sections.scss */
+  /* line 641, ../sass/3-modules/_sections.scss */
   #clients #grid2 .item4 {
     order: 1;
   }
@@ -1968,40 +1968,40 @@ p {
     width: 22em;
     padding: 3em 0;
   }
-  /* line 648, ../sass/3-modules/_sections.scss */
+  /* line 649, ../sass/3-modules/_sections.scss */
   #clients .grid .tooltext::after {
     visibility: hidden;
   }
-  /* line 650, ../sass/3-modules/_sections.scss */
+  /* line 651, ../sass/3-modules/_sections.scss */
   #clients .grid .item2 .tooltext, #clients .grid .item3 .tooltext {
     padding: 1.5em;
   }
-  /* line 653, ../sass/3-modules/_sections.scss */
+  /* line 654, ../sass/3-modules/_sections.scss */
   #clients .subtitle_text {
     font-size: 14px;
   }
-  /* line 654, ../sass/3-modules/_sections.scss */
+  /* line 655, ../sass/3-modules/_sections.scss */
   #clients .text {
     font-size: 16px;
   }
-  /* line 655, ../sass/3-modules/_sections.scss */
+  /* line 656, ../sass/3-modules/_sections.scss */
   #clients .clientname {
     font-size: 14px;
   }
-  /* line 657, ../sass/3-modules/_sections.scss */
+  /* line 658, ../sass/3-modules/_sections.scss */
   #clients h2 {
     font-size: 22px;
   }
-  /* line 658, ../sass/3-modules/_sections.scss */
+  /* line 659, ../sass/3-modules/_sections.scss */
   #clients #grid2 {
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 661, ../sass/3-modules/_sections.scss */
+  /* line 662, ../sass/3-modules/_sections.scss */
   #clients #grid2 .item3 {
     order: 2;
   }
-  /* line 664, ../sass/3-modules/_sections.scss */
+  /* line 665, ../sass/3-modules/_sections.scss */
   #clients #grid2 .item4 {
     order: 1;
   }
@@ -2012,40 +2012,40 @@ p {
     width: 20em;
     padding: 3em 0;
   }
-  /* line 673, ../sass/3-modules/_sections.scss */
+  /* line 674, ../sass/3-modules/_sections.scss */
   #clients .grid .item2 .tooltext, #clients .grid .item3 .tooltext {
     padding: 0.5em;
   }
-  /* line 675, ../sass/3-modules/_sections.scss */
+  /* line 676, ../sass/3-modules/_sections.scss */
   #clients .grid .tooltext::after {
     visibility: hidden;
   }
-  /* line 677, ../sass/3-modules/_sections.scss */
+  /* line 678, ../sass/3-modules/_sections.scss */
   #clients .subtitle_text {
     font-size: 14px;
   }
-  /* line 678, ../sass/3-modules/_sections.scss */
+  /* line 679, ../sass/3-modules/_sections.scss */
   #clients .text {
     font-size: 16px;
   }
-  /* line 679, ../sass/3-modules/_sections.scss */
+  /* line 680, ../sass/3-modules/_sections.scss */
   #clients .clientname {
     font-size: 14px;
   }
-  /* line 681, ../sass/3-modules/_sections.scss */
+  /* line 682, ../sass/3-modules/_sections.scss */
   #clients h2 {
     font-size: 22px;
   }
-  /* line 682, ../sass/3-modules/_sections.scss */
+  /* line 683, ../sass/3-modules/_sections.scss */
   #clients #grid2 {
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 685, ../sass/3-modules/_sections.scss */
+  /* line 686, ../sass/3-modules/_sections.scss */
   #clients #grid2 .item3 {
     order: 2;
   }
-  /* line 688, ../sass/3-modules/_sections.scss */
+  /* line 689, ../sass/3-modules/_sections.scss */
   #clients #grid2 .item4 {
     order: 1;
   }
@@ -2053,39 +2053,39 @@ p {
 @media screen and (max-width: 320px) {
   /* line 519, ../sass/3-modules/_sections.scss */
   #clients {
-    width: 1em;
+    width: 18em;
     padding: 4em 0;
   }
-  /* line 696, ../sass/3-modules/_sections.scss */
+  /* line 697, ../sass/3-modules/_sections.scss */
   #clients .grid .tooltext::after {
     visibility: hidden;
   }
-  /* line 698, ../sass/3-modules/_sections.scss */
+  /* line 699, ../sass/3-modules/_sections.scss */
   #clients .subtitle_text {
     font-size: 14px;
   }
-  /* line 699, ../sass/3-modules/_sections.scss */
+  /* line 700, ../sass/3-modules/_sections.scss */
   #clients .text {
     font-size: 16px;
   }
-  /* line 700, ../sass/3-modules/_sections.scss */
+  /* line 701, ../sass/3-modules/_sections.scss */
   #clients .clientname {
     font-size: 12px;
   }
-  /* line 702, ../sass/3-modules/_sections.scss */
+  /* line 703, ../sass/3-modules/_sections.scss */
   #clients h2 {
     font-size: 20px;
   }
-  /* line 703, ../sass/3-modules/_sections.scss */
+  /* line 704, ../sass/3-modules/_sections.scss */
   #clients #grid2 {
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 706, ../sass/3-modules/_sections.scss */
+  /* line 707, ../sass/3-modules/_sections.scss */
   #clients #grid2 .item3 {
     order: 2;
   }
-  /* line 709, ../sass/3-modules/_sections.scss */
+  /* line 710, ../sass/3-modules/_sections.scss */
   #clients #grid2 .item4 {
     order: 1;
   }
