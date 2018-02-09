@@ -309,7 +309,7 @@
       margin-left: 10em;
     }
     #back{
-      width: 44em;
+      width: 43em;
       #header2{
         font-size: 30px;
         margin-left: 2em;
@@ -380,6 +380,12 @@
       }
     }
   }
+  @media screen and (max-width: 576px){
+    #image1{visibility: hidden; width: auto;}
+    #back{
+      width: 36em;
+    }
+  }
   @media screen and (max-width: 425px){
     height: 20em;
     #image1{
@@ -389,7 +395,7 @@
       margin-left: 0;
     }
     #back{
-      width: 27em;
+      width: 24em;
       #header2{
         font-size: 20px;
         margin-left: 2em;
@@ -419,7 +425,6 @@
       }
     }
   }
-
   @media screen and (max-width: 375px){
     height: 18em;
     #image1{
