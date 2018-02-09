@@ -155,7 +155,7 @@
         }
         .icon2{padding-top: 1.8em;}
         .icon3{
-          padding-left: 0.35em;
+          padding-left: 1.5em;
         }
       }
     }
@@ -201,7 +201,7 @@
         padding-bottom: 1em;
         .items{
           .icon2{padding-top: 1.8em;}
-          .icon3{padding-left: 1.35em;}
+          .icon3{padding-left: 1.5em;}
         }
       }
     }
@@ -246,7 +246,7 @@
         padding-bottom: 1em;
         .items{
           .item{padding: 0.75em;}
-          .icon2{padding: 1em 0em 1em 0.75em;}
+          .icon2{padding: 0.75em 0.6em;}
           .icon3{padding-left: 1em;}
         }
       }
@@ -276,7 +276,7 @@
       }
     }
   }
-  @media screen and (max-width: 425px){
+  @media screen and (max-width: 576px){
     margin: 4em 0 4em;
     .top_header{
       h2{font-size: 26px;}
@@ -642,7 +642,7 @@
         }
     }
   }
-  @media screen and (width: 425px){
+  @media screen and (max-width: 425px){
     width: 22em;
     .grid{
       .tooltext::after{visibility: hidden;}
@@ -666,7 +666,7 @@
         }
     }
   }
-  @media screen and (width: 375px){
+  @media screen and (max-width: 375px){
     width: 20em;
     .grid{
       .item2,.item3{
@@ -677,7 +677,7 @@
     .subtitle_text{font-size: 14px;}
     .text{font-size: 16px;}
     .clientname{font-size: 14px;}
-    padding: 4em 0;
+    padding: 3em 0;
     h2{font-size: 22px;}
     #grid2{
         display: flex;
@@ -690,8 +690,8 @@
         }
     }
   }
-  @media screen and (width: 320px){
-    width: 18em;
+  @media screen and (max-width: 320px){
+    width: 1em;
     .grid{
       .tooltext::after{visibility: hidden;}
     }

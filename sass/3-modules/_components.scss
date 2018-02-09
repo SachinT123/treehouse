@@ -216,7 +216,7 @@
             border-radius: 2em;
             border-style: solid;
             text-align: center;
-            padding: 0.5em 0em;
+            padding: 0.2em;
             border-color: $greyish;
             border-width: 2px;
         }
@@ -337,6 +337,11 @@
       }
     }
   }
+  @media screen and (max-width: 800px){
+    #back{
+      width:50em;
+      }
+    }
   @media screen and (max-width: 768px){
     height: 22em;
     #image1{
@@ -453,7 +458,8 @@
         }
       }
     }
-    @media screen and (max-width: 320px){
+  }
+  @media screen and (max-width: 320px){
       height: 17em;
       #image1{
         visibility: hidden;
@@ -492,9 +498,6 @@
         }
       }
     }
-  }
-
-
 }
 
 //panel
