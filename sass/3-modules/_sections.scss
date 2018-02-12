@@ -1,65 +1,55 @@
 //services section
 .services{
-  padding: 7.5% 0;
-  width: 70%;
+  padding: 6.25em 0 4em;
+  width: 65%;
   h4{
-    font-size: 18px;
+    font-size: 20px;
     color: $opaque2;
     font-weight: 700;
+    padding-top: 1em;
   }
   .subtitle_text{
-    font-size: 20px;
-    padding-bottom: 4.5em;
+    font-size: 25px;
+    padding-bottom: 3em;
   }
   .pro{
     .column{
       padding-bottom: 3em;
+      .icons{
+        height: 4em;
+      }
     }
-    .icons{
-      height: 5em;
-    }
+
     img{
       display: inline-block;
     }
     p{
-      font-size: 14px;
+      font-size: 16.5px;
     }
   }
-  @media screen and (min-width: 1440px){
-    h2{
-      font-size: 40px;
-    }
-    .subtitle_text{
-      font-size: 26px;
-      padding-bottom: 5em;
-    }
-    h4{
-      font-size: 21px;
-    }
-    .pro{
-      p{
-        font-size: 18px;
-      }
-    }
-  }
-  @media screen and (max-width: 1024px){
+
+  @media screen and (max-width: 1200px){
+    width: 67%;
+    padding: 6em 0 2em;
     h2{
       font-size: 30px;
     }
     .subtitle_text{
-      font-size: 19px;
-      padding-bottom: 4em;
+      font-size: 20px;
+      padding-bottom: 3em;
     }
     h4{
-      font-size: 16px;
+      font-size: 18px;
     }
     .pro{
       p{
-        font-size: 12.5px;
+        font-size: 16px;
       }
     }
   }
   @media screen and (max-width: 992px){
+    width: 60%;
+    padding: 5em 0 2em;
     h2{
       font-size: 30px;
     }
@@ -68,21 +58,23 @@
       padding-bottom: 4em;
     }
     h4{
-      font-size: 18px;
+      font-size: 20px;
     }
     .pro{
       p{
-        font-size: 12.5px;
+        font-size: 17px;
       }
     }
   }
   @media screen and (max-width: 768px){
+    width: 65%;
+    padding: 4em 0 2em;
     h2{
-      font-size: 28px;
+      font-size: 26px;
     }
     .subtitle_text{
-      font-size: 18px;
-      padding-bottom: 3.5em;
+      font-size: 17px;
+      padding-bottom: 2em;
     }
     h4{
       font-size: 18px;
@@ -94,12 +86,13 @@
     }
   }
   @media screen and (max-width: 425px){
+    width: 67%;
     h2{
-      font-size: 26px;
+      font-size: 24px;
     }
     .subtitle_text{
-      font-size: 17px;
-      padding-bottom: 2.5em;
+      font-size: 16px;
+      padding-bottom: 1.5em;
     }
     h4{
       font-size: 16px;
@@ -111,19 +104,20 @@
     }
   }
   @media screen and (max-width: 375px){
+    width: 70%;
     h2{
-      font-size: 22px;
+      font-size: 24px;
     }
     .subtitle_text{
-      font-size: 15px;
-      padding-bottom: 2em;
+      font-size: 14px;
+      padding-bottom: 1em;
     }
     h4{
-      font-size: 17px;
+      font-size: 16px;
     }
     .pro{
       p{
-        font-size: 15px;
+        font-size: 14px;
       }
     }
   }
@@ -131,225 +125,306 @@
 
 //latest project section
 .latest_project{
-  margin: 6em 0em;
+  padding: 6.25em 0 0 0;
   width: 100%;
   .top_header{
     text-align: center;
-    padding-bottom: 4.5%;
+    padding-bottom: 3em;
     .subtitle_text{
-      font-size: 20px;
+      font-size: 25px;
       font-weight: 400;
     }
   }
   .subhead{
-    .grid{
-      .items{
-        padding: 0;
-        .item{
-          border-radius: 3em;
-          border-style: solid;
-          padding: 1.5em;
-          margin: 0;
-          border-color: $opaque;
-          border-width: 3px;
-        }
-        .icon2{padding-top: 1.8em;}
-        .icon3{
-          padding-left: 1.5em;
-        }
-      }
-    }
-    p{
-      font-size: 16px;
-      font-weight: 400;
-    }
-    h4{
-      font-size: 18px;
-      font-weight: 700;
-      color: $opaque2;
-      margin-bottom: 0;
-      a{
+    padding-left: 16.6%;
+    .mid{
+      h4{
         font-size: 18px;
         font-weight: 700;
-        font-size: 16px;
-        color: $green;
-      }
-      a:hover{
         color: $opaque2;
+        margin-bottom: 0;
       }
-    }
-    .features{
-      padding-left: 1em;
-      padding-top: 0.5em;
-      .row{margin-left: 0;}
-    }
-  }
-  @media screen and (max-width: 1440px){
-    margin: 7em 0 3em;
-    .top_header{
-      h2{font-size: 40px;}
-      .subtitle_text{font-size: 25px;}
-    }
-    .subhead{
-      p{font-size: 18px;}
-      h4{font-size: 21px!important;}
       .header_small{
-        h4{padding-bottom: 0.9em;}
-        padding: 1em 0;
+        padding-bottom: 1em;
+        h4{padding-bottom: inherit;}
+        .desc{
+          padding-right: 30%;
+          font-size: 16px;
+        }
       }
       .grid{
         padding-bottom: 1em;
         .items{
-          .icon2{padding-top: 1.8em;}
-          .icon3{padding-left: 1.5em;}
+          padding: 0;
+          .item{
+            border-radius: 3em;
+            border-style: solid;
+            height: 67px;
+            width: 67px;
+            margin: 0;
+            padding: 0.5em 0 0 0.6em;
+            border-color: $opaque;
+            border-width: 3px;
+          }
+          .icon2{padding-top: 0.8em;}
+          .icon3{
+            padding-left: 0.9em;
+            padding-top: 0.7em;
+          }
         }
+        .features{
+          padding-left: 1em;
+          padding-top: 0.5em;
+        }
+      }
+
+      .bottomline{
+        padding-right: 25%;
+        font-size: 16px;
+        p{font-size: inherit;}
+        .ref{
+          font-size: inherit;
+          color: $green;
+          font-weight: 700;
+        }
+        .ref:hover{
+          color: $opaque2;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1200px){
+    padding: 6em 0 2em;
+    .top_header{
+      h2{font-size: 32px;}
+      .subtitle_text{font-size: 20px;}
+    }
+    .subhead{
+      .mid{
+        h4{font-size: 18px;}
+        .header_small{
+          .desc{
+            padding-right: 16%;
+          }
+          padding: 0.8em 0;
+        }
+        .grid{
+          padding-bottom: 1em;
+          .items{
+            .item{
+              padding: 0.75em;
+              width: 60px;
+              height: 60px;
+            }
+            .icon3{padding: 0.6em 0.9em;}
+          }
+        }
+        .bottomline{padding-right: 14%;}
       }
     }
   }
   @media screen and (max-width: 1024px){
-    margin: 6em 0 5em;
+    padding: 5em 0 3em;
     .top_header{
       h2{font-size: 30px;}
-      .subtitle_text{font-size: 20px;}
+      .subtitle_text{font-size: 19px;}
     }
     .subhead{
-      p{font-size: 16px;}
-      h4{font-size: 18px!important;}
-      .header_small{
-        h4{padding-bottom: 0.7em;}
-        padding: 0.8em 0;
-      }
-      .grid{
-        padding-bottom: 1em;
-        .items{
-          .item{padding: 0.75em;}
-          .icon2{padding: 1em 0em 1em 0.75em;}
-          .icon3{padding-left: 1em;}
+      padding-left: 15%;
+      .mid{
+        h4{font-size: 17px!important;}
+        .header_small{
+          padding: 0.7em 0;
+          .desc{
+            padding-right: 10%;
+            font-size: 15px;
+          }
         }
-      }
-    }
-  }
-  @media screen and (max-width: 992px){
-    margin: 6em 0 5em;
-    .top_header{
-      h2{font-size: 30px;}
-      .subtitle_text{font-size: 20px;}
-    }
-    .subhead{
-      p{font-size: 15px;}
-      h4{font-size: 18px!important;}
-      .header_small{
-        h4{padding-bottom: 0.7em;}
-        padding: 0.8em 0;
-      }
-      .grid{
-        padding-bottom: 1em;
-        .items{
-          .item{padding: 0.75em;}
-          .icon2{padding: 0.75em 0.6em;}
-          .icon3{padding-left: 1em;}
+        .grid{
+          padding-bottom: 0.8em;
+          .items{
+            padding-top: 3px;
+            .item{
+              padding: 0.6em;
+              width: 55px;
+              height: 55px;
+            }
+            .icon3{padding: 0.6em 0.9em;}
+          }
+          .features{padding: 0 0 0 2em;font-size: 15px;}
+        }
+
+        .bottomline{
+          padding-right: 7%;
+          font-size: 15px;
         }
       }
     }
   }
   @media screen and (max-width: 768px){
-    margin: 4em 0 4em;
+    padding: 4em 0 0;
     .top_header{
-      h2{font-size: 27px;}
+      padding-bottom: 2em;
+      h2{font-size: 28px;}
       .subtitle_text{font-size: 18px;}
     }
     .subhead{
-      p{font-size: 13px;}
-      h4{font-size: 16px!important;}
-      .header_small{
-        h4{padding-bottom: 0.6em;}
-        padding: 0.7em 0;
-      }
-      .grid{
-        padding-bottom: 0.9em;
-        .items{
-          .item{padding: 0.6em;}
-          .icon2{padding: 0.6em 0.5em;}
-          .icon3{padding: 0.5em 0.75em;}
+      padding-left: 10%;
+      .mid{
+        padding: 0 7em;
+        h4{font-size: 16px;}
+        .header_small{
+            .desc{padding-right: 0; font-size: 14px;}
         }
-        .features{padding: 0 0 0 0.4em;}
+        .grid{
+          padding-bottom: 0.9em;
+          .items{
+            padding-top: 5px;
+            .item{
+              padding: 0.5em;
+              width: 50px;
+              height: 50px;
+            }
+            .icon3{padding: 0.4em 0.7em;}
+          }
+          .features{
+            padding: 0;
+            p{font-size: 14px;}
+          }
+        }
+        .bottomline{
+          font-size: 14px;
+        }
       }
     }
   }
   @media screen and (max-width: 576px){
-    margin: 4em 0 4em;
     .top_header{
       h2{font-size: 26px;}
-      .subtitle_text{font-size: 15px;}
+      .subtitle_text{font-size: 16px;}
+      padding-bottom: 1em;
     }
     .subhead{
-      margin-left: 2em;
-      margin-right: 0em;
-      p{font-size: 14px;}
-      h4{font-size: 15px!important;}
-      .header_small{
-        h4{padding-bottom: 0.6em;}
-        padding: 0.7em 0;
-      }
-      .grid{
-        padding-bottom: 0.9em;
-        .items{
-          .item{padding: 0.6em;}
-          .icon2{padding: 0.6em 0.5em;}
-          .icon3{padding: 0.6em 0.9em;}
-        }
+      padding: 0;
+      .mid{
+        padding-left: 5em;
+        padding-right: 5em;
 
+        h4{font-size: 16px!important;}
+        .header_small{
+          h4{padding-bottom: 0.6em;}
+          .desc{font-size: 16px;}
+          padding: 0.7em 0;
+        }
+        .grid{
+          padding-bottom: 0.9em;
+          .items{
+            padding: 0;
+            .item{
+              padding: 0.75em;
+              width: 60px;
+              height: 60px;
+            }
+            .icon3{padding: 0.6em 0.9em;}
+          }
+          .features{
+            padding-left: 1em;
+            p{font-size: 16px;}
+          }
+        }
+        .bottomline{
+          font-size: 16px;
+        }
       }
     }
   }
-  @media screen and (max-width: 375px){
-    margin: 4em 0 4em;
+  @media screen and (max-width: 425px){
+    padding-top: 2em;
     .top_header{
       h2{font-size: 24px;}
       .subtitle_text{font-size: 15px;}
     }
     .subhead{
-      margin-left: 0.5em;
-      p{font-size: 13px;}
-      h4{font-size: 15px!important;}
-      .header_small{
-        h4{padding-bottom: 0.6em;}
-        padding: 0.7em 0;
-      }
-      .grid{
-        padding-bottom: 0.9em;
-        .items{
-          .item{padding: 0.6em;}
-          .icon2{padding: 0.6em 0.5em;}
-          .icon3{padding: 0.6em 0.9em;}
+      .mid{
+        padding-left: 4em;
+        padding-right: 4em;
+        h4{font-size: 15px;}
+        .header_small{
+          h4{padding-bottom: 0.6em;}
+          padding: 0.7em 0;
+          .desc{font-size: 15px;}
         }
-
+        .grid{
+          padding-bottom: 0.8em;
+          .items{
+            padding-top: 5px;
+            .item{
+              padding: 0.7em;
+              width: 55px;
+              height: 55px;
+            }
+            .icon2{padding-top: 0.9em; }
+            .icon3{padding: 0.6em 0.9em;}
+          }
+          .features{
+            padding-left: 2em;
+            p{font-size: 15px;}
+          }
+        }
+        .bottomline{font-size: 15px;}
+      }
+    }
+  }
+  @media screen and (max-width: 375px){
+    .subhead{
+      .mid{
+        h4{font-size: 15px;}
+        .header_small{
+          h4{padding-bottom: 0.6em;}
+          padding: 0.7em 0;
+          .desc{font-size: 15px;}
+        }
+        .grid{
+          padding-bottom: 0.8em;
+          .items{
+            padding-top: 5px;
+            .item{
+              padding: 0.7em;
+              width: 55px;
+              height: 55px;
+            }
+            .icon2{padding-top: 0.9em; }
+            .icon3{padding: 0.6em 0.9em;}
+          }
+          .features{
+            padding-left: 2em;
+            p{font-size: 15px;}
+          }
+        }
+        .bottomline{font-size: 15px;}
       }
     }
   }
   @media screen and (max-width: 320px){
-    margin: 4em 0 4em;
-    .top_header{
-      h2{font-size: 22px;}
-      .subtitle_text{font-size: 14px;}
-      padding-bottom: 0.4em;
-    }
     .subhead{
-      margin-left: 0.5em;
-      p{font-size: 11px;}
-      h4{font-size: 15px!important;}
-      .header_small{
-        h4{padding-bottom: 0.6em;}
-        padding: 0.6em 0;
-      }
-      .grid{
-        padding-bottom: 0.9em;
-        .items{
-          .item{padding: 0.6em;}
-          .icon2{padding: 0.6em 0.5em;}
-          .icon3{padding: 0.6em 0.75em;}
+      .mid{
+        h4{font-size: 14px;}
+        .header_small{
+          .desc{font-size: 13px;}
         }
-
+        .grid{
+          .items{
+            .item{
+              width: 50px;
+              height: 50px;
+            }
+          }
+          .features{
+            padding-left: 2em;
+            p{font-size: 13px;}
+          }
+        }
+        .bottomline{font-size: 13px;}
       }
     }
   }
@@ -360,36 +435,38 @@
   background-color: $background2;
   margin: 0;
   width: 100%;
-  padding: 7.5em 10em;
+  padding: 6.25em 0 4em;
   h4{
     font-size: 18px;
     color: $opaque2;
     font-weight: 700;
+    padding-top: 1em;
   }
   #p3{
-    font-size: 20px;
+    font-size: 24px;
   }
   .values{
-    padding-top: 5em;
+    width: 67%;
+    margin: 5% 16.5%;
     .icons{
-        text-align: center;
-        position: relative;
         border-radius: 50%;
         border-style: solid;
         border-color: $base_font_color;
-        padding: 5.5%;
+        padding: 1.2em;
+        height: 6em;
+        width: 6em;
         display: inline-block;
     }
     .icon1::after{
-      content: "";
+        content: "";
         position: absolute;
         border-top: 2px solid;
         width: 50%;
         top: 2.5em;
-        transform: translate(50%, 0);
+        transform: translateX(50%);
     }
     .icon2::after{
-      content: "";
+        content: "";
         position: absolute;
         border-top: 2px solid;
         width: 50%;
@@ -398,25 +475,14 @@
     }
     .icon2{
       .icons{
-        padding: 5.5% 7.5%;
+        padding-left: 1.5em;
       }
     }
+    .description{font-size: 16px;}
   }
-  @media screen and (min-width: 1440px){
-    padding: 7.5em 14em;
-    h2{
-      font-size: 40px;
-    }
-    #p3{
-      font-size: 25px;
-    }
-    h4{
-      font-size: 20px;
-    }
-    p{font-size: 18px;}
-  }
-  @media screen and (max-width: 1024px){
-    padding: 6em 7em;
+
+  @media screen and (max-width: 1200px){
+    padding: 5em 0em 3em;
     h2{
       font-size: 30px;
     }
@@ -424,17 +490,18 @@
       font-size: 18px;
     }
     h4{
-      font-size: 18px;
+      font-size: 16px;
     }
     .values{
-      padding-top: 4em;
-      p{font-size: 16px;}
-      .icons{padding: 0.85em;}
+      width: 74%;
+      margin: 5% 13%;
+      .description{font-size: 14px;}
+      .icons{padding: 1em;}
 
     }
   }
   @media screen and (max-width: 992px){
-    padding: 5em 7em;
+    padding: 5em 0 2.5em;
     h2{
       font-size: 30px;
     }
@@ -445,16 +512,16 @@
       font-size: 18px;
     }
     .values{
-      padding-top: 4em;
-      p{font-size: 16px;}
-      .icons{padding: 2em;}
+      width: 50%;margin: 5% 25%;
+      .description{font-size: 16px;}
+      .icons{padding: 1.5em;}
       .icon1::after{visibility: hidden;}
       .icon2::after{visibility: hidden;}
       .icon1,.icon2,.icon3{padding-bottom: 2em;}
     }
   }
   @media screen and (max-width: 768px){
-    padding: 5em 7em;
+    padding: 5em 0 2em;
     h2{
       font-size: 30px;
     }
@@ -465,16 +532,16 @@
       font-size: 18px;
     }
     .values{
-      padding-top: 4em;
+      width: 64%;margin: 5% 18%;
       p{font-size: 16px;}
-      .icons{padding: 2em;}
+      .icons{padding: 1.5em;}
       .icon1::after{visibility: hidden;}
       .icon2::after{visibility: hidden;}
       .icon1,.icon2,.icon3{padding-bottom: 2em;}
     }
   }
   @media screen and (max-width: 425px){
-    padding: 5em 2em;
+    padding: 5em 0 2em;
     h2{
       font-size: 24px;
     }
@@ -485,7 +552,7 @@
       font-size: 16px;
     }
     .values{
-      padding-top: 4em;
+      width: 70%;margin: 5% 15%;
       p{font-size: 14px;}
       .icons{padding: 1.25em;}
       .icon1::after{visibility: hidden;}
@@ -494,7 +561,7 @@
     }
   }
   @media screen and (max-width: 375px){
-    padding: 5em 2em;
+    padding: 5em 0 2em;
     h2{
       font-size: 24px;
     }
@@ -505,9 +572,10 @@
       font-size: 16px;
     }
     .values{
-      padding-top: 3em;
+      width: 78%;margin: 5% 11%;
+      padding-top: 2em;
       p{font-size: 16px;}
-      .icons{padding: 0.9em;}
+      .icons{padding: 1.5em;}
       .icon1::after{visibility: hidden;}
       .icon2::after{visibility: hidden;}
       .icon1,.icon2,.icon3{padding-bottom: 2em;}
@@ -519,6 +587,7 @@
 #clients{
   padding: 7em 0;
   width: 56em;
+  font-family: RobotoSlab;
   .subtitle_text{
     font-size: 24px;
   }
@@ -527,7 +596,7 @@
   }
   .clientname{
     color: $green;
-    font-size: 20px;
+    font-size: 18px;
   }
   .grid{
     padding-top:1.5em;

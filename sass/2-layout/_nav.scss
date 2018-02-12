@@ -1,16 +1,18 @@
-
+.navi{background-color: $white!important;}
 .navbar {
     margin-bottom: 0;
     z-index: 9999;
     border-radius: 0;
     padding: 2.5% 0;
     .navbar-nav{
-        li a{
+      li{
+        font-size: 14px;
+        a{
           :hover,:active{
-            color: #222222 !important;
-            background-color: #fff !important;
+            color: $opaque2 !important;
           }
         }
+      }
     }
     .navbar-collapse{
       margin: 0;
@@ -19,14 +21,17 @@
       color: #555555;
       font-weight: 700;
       margin-left: 10% !important;
-      padding: 4% 0 0 0;
+      padding: 5% 0;
       width: 200px;
       img{
         display: inline;
         border-radius: 50%;
-        background: #7cc576;
-        padding: 5% 4.5% 3.5% 4.5%;
+        background: $green;
+        padding: 4% 4.5%;
       }
+    }
+    @media screen and (max-width: 767px){
+      .navbar-brand{padding: 10px 0 0 0;}
     }
 }
 .navbar-default .navbar-toggle {
