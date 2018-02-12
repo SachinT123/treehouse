@@ -1307,7 +1307,7 @@ p {
   }
   /* line 232, ../sass/3-modules/_sections.scss */
   .latest_project .subhead {
-    padding-left: 15%;
+    padding-left: 12.5%;
   }
   /* line 235, ../sass/3-modules/_sections.scss */
   .latest_project .subhead .mid h4 {
@@ -1351,7 +1351,7 @@ p {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* line 127, ../sass/3-modules/_sections.scss */
   .latest_project {
     padding: 4em 0 0;
@@ -1370,7 +1370,7 @@ p {
   }
   /* line 271, ../sass/3-modules/_sections.scss */
   .latest_project .subhead {
-    padding-left: 10%;
+    padding-left: 0;
   }
   /* line 273, ../sass/3-modules/_sections.scss */
   .latest_project .subhead .mid {

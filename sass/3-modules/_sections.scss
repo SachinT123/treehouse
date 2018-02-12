@@ -230,7 +230,7 @@
       .subtitle_text{font-size: 19px;}
     }
     .subhead{
-      padding-left: 15%;
+      padding-left: 12.5%;
       .mid{
         h4{font-size: 17px!important;}
         .header_small{
@@ -261,7 +261,7 @@
       }
     }
   }
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 767px){
     padding: 4em 0 0;
     .top_header{
       padding-bottom: 2em;
@@ -269,7 +269,7 @@
       .subtitle_text{font-size: 18px;}
     }
     .subhead{
-      padding-left: 10%;
+      padding-left: 0;
       .mid{
         padding: 0 7em;
         h4{font-size: 16px;}
