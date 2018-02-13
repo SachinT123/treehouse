@@ -30,12 +30,12 @@
             font-size: 12px;
           }
         }
+        .ref:hover{
+            color: $green;
+            a{text-decoration: none;}
+          }
       }
-    }
-    .ref:hover{
-        color: $green;
-        a{text-decoration: none;}
-      }
+  }
 
     #col3{
       padding-right: 5%;
@@ -45,7 +45,7 @@
       padding: 3em 8em;
       .mini{font-size: 13px;}
     }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       font-size: 12px;
       padding: 3em 5em;
       .mini{font-size: 10px;}
@@ -86,7 +86,7 @@
     .fa-pinterest-p:hover{background-color: #cb2028;}
     .fa-google-plus:hover{background-color: #da2713;}
   }
-  @media screen and (max-width: 1232px){
+  @media screen and (max-width: 1200px){
     padding: 2em 10em;
     .Copyright{font-size: 13px;}
   }
