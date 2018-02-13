@@ -32,15 +32,14 @@
         }
       }
     }
-    #col2{
-      .ref:hover{
-          color: $green;
-        }
-    }
+    .ref:hover{
+        color: $green;
+        a{text-decoration: none;}
+      }
+
     #col3{
       padding-right: 5%;
-      .ref:hover{color: $green;}
-    }
+      }
     @media screen and (max-width: 1200px){
       font-size: 15px;
       padding: 3em 8em;

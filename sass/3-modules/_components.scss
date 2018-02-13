@@ -42,7 +42,7 @@
     position: relative;
     padding-top: 3%;
   }
-  @media screen and (min-width: 1440px){
+  @media screen and (min-width: 1200px){
     height: 40em;
     .top_header{
       padding: 11% 28% 0;
@@ -159,14 +159,14 @@
   width: 100%;
   padding: 0;
   #image1{
-    width: 23em;
+    width: 27.8%;
     z-index: 0;
-    padding: 8.2em 0;
-    margin-left: 13.2em;
+    padding: 8% 0;
+    margin-left: 16%;
     position: absolute;
   }
   #back{
-    width: 64.5em;
+    width: 70%;
     height: 100%;
     z-index: 9;
     float: right;
@@ -181,8 +181,8 @@
     }
     #header2{
       margin-left: 2em;
-      margin-top: 2em;
-      padding: 0 0 0.75em 0;
+      margin-top: 2.5em;
+      padding: 0 0 0.5em 0;
       width: auto;
       height: auto;
       z-index: inherit;
@@ -194,11 +194,11 @@
       }
     }
     #desc2{
-      font-size: 16px;
+      font-size: 20px;
       color: $greyish;
-      margin-left: 5em;
+      margin-left: 4em;
       padding: 0;
-      width: 24em;
+      width: 27em;
       height: auto;
       text-align: left;
       float: left;
@@ -206,201 +206,175 @@
       position: relative;
       .grid{
         margin: 0;
+        padding-top: 0.5em;
         .i{
           padding: 0;
           .ic{
+            width: 32px;
+            height: 32px;
             i{
               font-weight: 400;
               font-size: inherit;
             }
-            border-radius: 2em;
+            padding-top: 0.2em;
+            border-radius: 2.5em;
             border-style: solid;
             text-align: center;
-            padding: 0.2em;
             border-color: $greyish;
             border-width: 2px;
-        }
-      }
-        .grid-item{
-          padding: 0.5em 1.5em;
+          }
         }
       }
       .button2{
         width: 12em;
+        font-size: 14px;
+        transform: scaleY(1.0783);
+        margin-top: 2em;
       }
     }
   }
-  @media screen and (min-width: 1440px){
-    height: 40em;
+  @media screen and (max-width: 1200px){
+    height: 35em;
     #image1{
-      width: 25em;
-      padding: 6.6em 0;
-      margin-left: 10.5em;
+      padding: 8.5% 0;
     }
     #back{
-      width: 67em;
       #header2{
-        font-size: 40px;
-        margin-left: 2.5em;
-        margin-top: 2.5em;
+        font-size: 35px;
+        margin-left: 2em;
+        margin-top: 2em;
       }
       #desc2{
-        font-size: 20px!important;
+        font-size: 18px;
         width: 27em;
         .grid{
           .i{
             .ic{
-              padding: 0.3em 0;
-              border-radius: 2em;
+              padding: 0.2em 0;
             }
           }
           .grid-item{
-            padding: 0.3em 1.3em;
+            padding-top: 0.2em;
           }
         }
         .button2{
           width: 13em;
           height: 4em;
+          margin-top: 1.5em;
         }
       }
     }
   }
   @media screen and (max-width: 1024px){
-    height: 29em;
+    height: 30em;
     #image1{
-      width: 17.8em;
       padding: 5em 0;
-      margin-left: 10em;
     }
     #back{
-      width: 45em;
       #header2{
         font-size: 30px;
-        margin-left: 2.5em;
+        margin-left: 2em;
         margin-top: 2em;
-        padding-bottom: 0.5em;
       }
       #desc2{
-        font-size: 16px!important;
-        width: 27em;
+        font-size: 16px;
         .grid{
-          .i{
-            .ic{
-              padding: 0.5em 0 0.1em 0;
-              border-radius: 2em;
-            }
-          }
           .grid-item{
-            padding: 0.3em 1.3em;
+            padding-top: 0.3em;
           }
         }
         .button2{
-          width: 13em;
-          height: 4.5em;
+          width: 12em;
+          height: 4em;
+          margin-top: 1em;
+          font-size: 13px;
         }
       }
     }
   }
   @media screen and (max-width: 992px){
-    height: 28em;
+    height: 29em;
     #image1{
-      width: 17.8em;
-      padding: 5em 0;
-      margin-left: 10em;
+      padding: 5.3em 0;
     }
     #back{
-      width: 43em;
       #header2{
-        font-size: 30px;
+        font-size: 28px;
         margin-left: 2em;
         margin-top: 2em;
-        padding-bottom: 0.5em;
       }
       #desc2{
-        font-size: 16px!important;
+        font-size: 15px;
         width: 27em;
         .grid{
           .i{
             .ic{
-              padding: 0.5em 0 0.1em 0;
-              border-radius: 2em;
+              padding-top: 0.4em;
             }
           }
           .grid-item{
-            padding: 0.3em 1.3em;
+            padding: 0.2em 0 0 0.8em;
           }
         }
         .button2{
           width: 13em;
-          height: 4.5em;
+          height: 4em;
+          font-size: 12px;
         }
       }
     }
   }
   @media screen and (max-width: 800px){
-    #back{
-      width:50em;
-      }
-    }
-  @media screen and (max-width: 768px){
-    height: 22em;
+    height: 24em;
     #image1{
-      width: 12em;
-      padding: 4.5em 0;
-      margin-left: 6em;
+      padding: 4em 0;
     }
     #back{
-      width: 36em;
       #header2{
         font-size: 24px;
         margin-left: 2em;
         margin-top: 1.5em;
-        padding-bottom: 0.4em;
       }
       #desc2{
-        font-size: 12px!important;
+        font-size: 13px!important;
         width: 27em;
         margin-left: 4em;
         .grid{
           .i{
             .ic{
-              padding: 0.4em 0 0.1em 0;
-              border-radius: 2em;
+              padding-top: 0.5em;
+              border-radius: 2.5em;
               border-width: 1px;
             }
           }
           .grid-item{
-            padding: 0.3em 1.3em;
+            padding: 0.5em 0 0 1.3em;
           }
         }
         .button2{
-          width: 13em;
-          height: 4.2em;
+          font-size: 11px!important;
+          width: 12em;
+          height: 4em;
         }
       }
     }
   }
   @media screen and (max-width: 576px){
-    #image1{visibility: hidden; width: auto;}
+    #image1{visibility: hidden; height: auto;}
     #back{
-      width: 36em;
+      width: 100%;
+      #desc2{
+        .button2{margin-top: 0;}
+      }
     }
   }
   @media screen and (max-width: 425px){
     height: 20em;
-    #image1{
-      visibility: hidden;
-      width: auto;
-      padding: 3.5em 0;
-      margin-left: 0;
-    }
     #back{
-      width: 100%;
       #header2{
         font-size: 20px;
         margin-left: 2em;
         margin-top: 1.5em;
-        padding-bottom: 0.4em;
       }
       #desc2{
         font-size: 10px!important;
@@ -409,100 +383,61 @@
         .grid{
           .i{
             .ic{
-              padding: 0.6em 0 0.1em 0;
-              border-radius: 2em;
-              border-width: 1px;
+              width: 22px;
+              height: 22px;
+              padding-top: 0.4em;
             }
           }
           .grid-item{
-            padding: 0.3em 1.3em;
+            padding: 0.3em 0 0 1.3em;
           }
         }
         .button2{
-          width: 13em;
-          height: 4.2em;
+          font-size: 9px!important;
+          width: 12em;
+          height: 4em;
         }
       }
     }
   }
   @media screen and (max-width: 375px){
     height: 18em;
-    #image1{
-      visibility: hidden;
-      width: 12em;
-      padding: 3.5em 0;
-      margin-left: 0;
-    }
     #back{
-      width: 24em;
       #header2{
-        font-size: 19px;
-        margin-left: 2em;
+        font-size: 20px;
+        margin-left: 1.5em;
         margin-top: 1.5em;
-        padding-bottom: 0.4em;
       }
       #desc2{
         font-size: 10px!important;
         width: 27em;
-        margin-left: 4em;
+        margin-left: 3em;
         .grid{
-          .i{
-            .ic{
-              padding: 0.6em 0 0.1em 0;
-              border-radius: 2em;
-              border-width: 1px;
-            }
-          }
-          .grid-item{
-            padding: 0.3em 1.3em;
-          }
+          padding-top: 0.4em;
         }
         .button2{
-          width: 13em;
-          height: 4.2em;
+          font-size: 8px!important;
+          width: 12em;
+          height: 4em;
         }
       }
     }
   }
   @media screen and (max-width: 320px){
       height: 17em;
-      #image1{
-        visibility: hidden;
-        width: 12em;
-        padding: 3.5em 0;
-        margin-left: 0;
-      }
       #back{
-        width: 20em;
         #header2{
           font-size: 18px;
           margin-left: 1em;
           margin-top: 1.25em;
-          padding-bottom: 0.4em;
         }
         #desc2{
           font-size: 10px!important;
           width: 27em;
-          margin-left: 1.8em;
-          .grid{
-            .i{
-              .ic{
-                padding: 0.6em 0 0.1em 0;
-                border-radius: 2em;
-                border-width: 1px;
-              }
-            }
-            .grid-item{
-              padding: 0.3em 1.3em;
-            }
-          }
-          .button2{
-            width: 13em;
-            height: 4.2em;
-          }
+          margin-left: 2em;
         }
       }
-    }
+  }
 }
 
 //panel

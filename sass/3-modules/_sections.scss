@@ -261,25 +261,24 @@
       }
     }
   }
-  @media screen and (max-width: 767px){
-    padding: 4em 0 0;
+  @media screen and (max-width: 800px){
+    padding: 4em 0 2em;
     .top_header{
       padding-bottom: 2em;
       h2{font-size: 28px;}
       .subtitle_text{font-size: 18px;}
     }
     .subhead{
-      padding-left: 0;
+      padding-left: 8%;
       .mid{
-        padding: 0 7em;
-        h4{font-size: 16px;}
+        h4{font-size: 16px!important;}
         .header_small{
-            .desc{padding-right: 0; font-size: 14px;}
+          padding-bottom: 0.4em;
+            .desc{padding-right: 2em; font-size: 13px;}
         }
         .grid{
           padding-bottom: 0.9em;
           .items{
-            padding-top: 5px;
             .item{
               padding: 0.5em;
               width: 50px;
@@ -288,13 +287,48 @@
             .icon3{padding: 0.4em 0.7em;}
           }
           .features{
-            padding: 0;
-            p{font-size: 14px;}
+            padding: 0.2em 0 0 1.2em ;
+            p{font-size: 13px;}
           }
         }
         .bottomline{
-          font-size: 14px;
+          font-size: 13px;
+          .ref{font-size: 12px;}
         }
+      }
+    }
+  }
+  @media screen and (max-width: 767px){
+    padding-top: 4em;
+    .top_header{
+      padding-bottom: 2em;
+      h2{font-size: 28px;}
+      .subtitle_text{font-size: 18px;}
+    }
+    .subhead{
+      padding: 0;
+      .mid{
+        padding: 0 7em;
+        h4{font-size: 18px;}
+        .header_small{
+            .desc{padding-right: 0; font-size: 16px;}
+        }
+        .grid{
+          padding-bottom: 0.9em;
+          .items{
+            .icon3{padding: 0.4em 0.7em;}
+          }
+          .features{
+            padding-left: 1em;
+            p{font-size: 16px;}
+          }
+        }
+        .bottomline{
+          font-size: 16px;
+        }
+      }
+      .tphone{
+        img{float: right;}
       }
     }
   }
@@ -305,19 +339,14 @@
       padding-bottom: 1em;
     }
     .subhead{
-      padding: 0;
       .mid{
-        padding-left: 5em;
-        padding-right: 5em;
-
+        padding: 0 5em;
         h4{font-size: 16px!important;}
         .header_small{
           h4{padding-bottom: 0.6em;}
-          .desc{font-size: 16px;}
           padding: 0.7em 0;
         }
         .grid{
-          padding-bottom: 0.9em;
           .items{
             padding: 0;
             .item{
@@ -327,13 +356,6 @@
             }
             .icon3{padding: 0.6em 0.9em;}
           }
-          .features{
-            padding-left: 1em;
-            p{font-size: 16px;}
-          }
-        }
-        .bottomline{
-          font-size: 16px;
         }
       }
     }
@@ -346,62 +368,52 @@
     }
     .subhead{
       .mid{
-        padding-left: 4em;
-        padding-right: 4em;
-        h4{font-size: 15px;}
+        padding: 0 4em;
+        h4{font-size: 15px!important;}
         .header_small{
           h4{padding-bottom: 0.6em;}
-          padding: 0.7em 0;
-          .desc{font-size: 15px;}
+          padding: 0.7em 2.6em 0 0;
+          .desc{font-size: 14px;}
         }
         .grid{
           padding-bottom: 0.8em;
           .items{
             padding-top: 5px;
             .item{
-              padding: 0.7em;
-              width: 55px;
-              height: 55px;
+              padding: 0.5em;
+              width: 50px;
+              height: 50px;
             }
-            .icon2{padding-top: 0.9em; }
-            .icon3{padding: 0.6em 0.9em;}
+            .icon2{padding-top: 0.6em; }
+            .icon3{padding: 0.6em 0.75em;}
           }
           .features{
-            padding-left: 2em;
-            p{font-size: 15px;}
+            p{font-size: 14px;}
           }
         }
-        .bottomline{font-size: 15px;}
+        .bottomline{font-size: 14px;}
       }
     }
   }
   @media screen and (max-width: 375px){
     .subhead{
       .mid{
-        h4{font-size: 15px;}
+        padding: 0 3.7em;
+        h4{font-size: 14px!important;}
         .header_small{
-          h4{padding-bottom: 0.6em;}
           padding: 0.7em 0;
-          .desc{font-size: 15px;}
         }
         .grid{
-          padding-bottom: 0.8em;
-          .items{
-            padding-top: 5px;
-            .item{
-              padding: 0.7em;
-              width: 55px;
-              height: 55px;
-            }
-            .icon2{padding-top: 0.9em; }
-            .icon3{padding: 0.6em 0.9em;}
-          }
           .features{
-            padding-left: 2em;
-            p{font-size: 15px;}
+            padding: 0 0 0 2em;
+            p{font-size: 14px;}
           }
         }
-        .bottomline{font-size: 15px;}
+        .bottomline{
+          font-size: 14px;
+          padding-right: 0;
+          .ref{font-size: 14px;}
+        }
       }
     }
   }
@@ -410,7 +422,7 @@
       .mid{
         h4{font-size: 14px;}
         .header_small{
-          .desc{font-size: 13px;}
+          .desc{font-size: 12px;}
         }
         .grid{
           .items{
@@ -421,10 +433,13 @@
           }
           .features{
             padding-left: 2em;
-            p{font-size: 13px;}
+            p{font-size: 12px;}
           }
         }
-        .bottomline{font-size: 13px;}
+        .bottomline{
+          font-size: 12px;
+          .ref{font-size: 12px!important;}
+        }
       }
     }
   }
@@ -586,7 +601,7 @@
 //clients
 #clients{
   padding: 7em 0;
-  width: 56em;
+  width: 67.6%;
   font-family: RobotoSlab;
   .subtitle_text{
     font-size: 24px;
@@ -609,7 +624,7 @@
         width: 14em;
       }
     }
-   .item2,.item3{
+    .item2,.item3{
      padding: 1.25em 2em 1.25em 4em;
      .tooltext{
         width: auto;
@@ -651,7 +666,7 @@
       }
     }
   }
-  @media screen and (max-width: 1440px){
+  @media screen and (max-width: 1200px){
     h2{font-size:40px;}
   }
   @media screen and (max-width: 1024px){
