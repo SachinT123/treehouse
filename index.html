@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Treehouse</title>
+	<link rel="icon" type="icon" href="./images/Logo.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  	<link href="stylesheets/combined_css.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
-  	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet">
-  	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
 <!--Navigation bar and header-->
 	<nav class="navbar navbar-default navi">
-	  <div class="container">
+	  <div class="container nav-container">
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>                        
+	        <span class="icon-bar"></span>
 	      </button>
 	      <a class="navbar-brand" href="#myPage"><img src="images/leaf.png" class="img-responsive">&nbsp TREEHOUSE</a>
 	    </div>
@@ -39,17 +38,19 @@
 	</nav>
 
 <!--Title section-->
-	<div class="container-fluid jumbo">
-	    <img src="images/Background.jpg" class="img-responsive back_1">
-	    <h1 class="top_header">CREATIVE DIGITAL SOLUTIONS</h1>
-	    <p class="subtitle_text">Proin iaculis purus consequat sem cure.</p> 
-	    <div class="button1"><button class="button" id="1">VIEW PORTFOLIO</button></div>
+	<div class="container-fluid title">
+		<div class="back_1">&nbsp;</div>
+		<div class="text">
+		    <h1 class="top_header">CREATIVE DIGITAL SOLUTIONS</h1>
+		    <p class="subtitle_text">Proin iaculis purus consequat sem cure.</p>
+		    <div class="button1"><button class="button" id="1">VIEW PORTFOLIO</button></div>
+	    </div>
 	</div>
 
 <!--Professional services-->
-	<div class="container-fluid text-center services">
+	<div class="container text-center services">
 	    <h2>PROFESSIONAL SERVICES</h2>
-	    <p class="subtitle_text" id="p2"> Proin iaculis purus consequat sem cure.</p>
+	    <p class="subtitle_text" id="p2"> Proin iaculis purus consequat sem cure</p>
 	    <div class="row pro">
 	      <div class="col-md-4 col-sm-12 column">
 	          <div class="icons"><img src="images/Icon-Heart.jpg" class="img-responsive"></div>
@@ -65,36 +66,30 @@
 	       	  <div class="icons"><img src="images/Icon-Graph.jpg" class="img-responsive"></div>
 	          <h4>MARKETING TOOLS</h4>
 	          <p>Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt</p>
-	    
+
 	      </div>
 	    </div>
 	</div>
 
 <!--Just relax section-->
-	<div class="container-fluid" id="back2">
+	<div class="container-fluid just-relax">
 	    <img src="images/gear2.png" class="img-responsive" id="image1">
 	    <div id="back">
-	    	<img src="images/Background2.jpg" class="img-responsive" id="image2">
-	     	<h2 id="header2">JUST RELAX <span id="and">&</span><br>LET US DO THE HEAVY LIFTING</h2>
-	     	<div id="desc2">
-	     		<p>Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-	     		<div class="row grid">
-	     			<div class="col-xs-1 i">
-	     				<div class="ic"><i class="material-icons">done</i></div></div>
-	     			<div class="col-xs-11 grid-item"><p>Initial setup & customizations</p></div>
-	     		</div>
-	     		<div class="row grid">
-	     			<div class="col-xs-1 i"><div class="ic"><i class="material-icons">done</i></div></div>
-	     			<div class="col-xs-11 grid-item"><p>Regular updates</p></div>
-	     		</div>
-	     		<div class="row grid">
-	     			<div class="col-xs-1 i"><div class="ic"><i class="material-icons">done</i></div></div>
-	     			<div class="col-xs-11 grid-item"><p>Round the clock support</p></div>
-	     		</div>   
-	     		<br>
-	     		<button class="button button2" id="2">LEARN MORE</button>   
-	     	</div>
-	    </div>   
+	    	<div class="bg2">&nbsp;</div>
+	    	<div class="text">
+		     	<h2 id="header2">JUST RELAX <span id="and">&</span><br>LET US DO THE HEAVY LIFTING</h2>
+		     	<div id="desc2">
+		     		<p>Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+		     		<ul class="list">
+		     			<li class="check">Initial setup & customizations</li>
+		     			<li class="check">Regular updates</li>
+		     			<li class="check">Round the clock support</li>
+		     		</ul>
+		     		<br>
+		     		<button class="button button2" id="2">LEARN MORE</button>
+		     	</div>
+		    </div>
+	    </div>
 	</div>
 
 <!--latest projects section-->
@@ -105,44 +100,28 @@
 		</section>
 		<div class="row subhead">
 			<div class="col-md-5 col-sm-5 col-xs-12 mid">
-				<div class="row header_small"><h4>DEVELOPING A FRAMEWORK</h4>
+				<div class="header_small"><h4>DEVELOPING A FRAMEWORK</h4>
 				<p class="desc">Proin iaculis purus consequat sem cure digni ssim donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt</p>
 				</div>
-				<div class="row grid">
-					<div class="col-sm-2 col-xs-2 items">
-						<div class="item icon1">
-						<img src="images/Icon-Basket.png" class="img-responsive">
-						</div>
-					</div>
-					<div class="col-sm-10 col-xs-10 features">
-						<div class="row"><h4>E-Commerce Ready</h4></div>
-						<div class="row"><p>Proin iaculis purus consequat sem cure digni ssim.</p></div>
-					</div>
+				<ul class="list">
+					<li class="features feature1">
+							<h4>E-Commerce Ready</h4>
+							<p>Proin iaculis purus consequat sem cure digni ssim.</p>
+					</li>
+				
+					<li class="features feature2">
+							<h4>Powerful SEO Features</h4>
+							<p>Proin iaculis purus consequat sem cure.</p>
+					</li>
+
+					<li class="features feature3">
+							<h4>Secure Encryption</h4>
+							<p>Proin iaculis purus consequat sem cure iaculis purus.</p>
+					</li>
+				</ul>
+				<div class="bottomline">
+					<p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in. <br> <br> <a href="#details" class="ref">VIEW DETAILS <i class="fa fa-arrow-right"></i></a>  </p>
 				</div>
-				<div class="row grid">
-					<div class="col-sm-2 col-xs-2 items">
-						<div class="item icon2">
-						<img src="images/Icon-Laptop.png" class="img-responsive">
-						</div>
-					</div>
-					<div class="col-sm-10 col-xs-10 features">
-						<div class="row"><h4>Powerful SEO Features</h4></div>
-						<div class="row"><p>Proin iaculis purus consequat sem cure.</p></div>
-					</div>
-				</div>
-				<div class="row grid">
-					<div class="col-sm-2 col-xs-2 items">
-						<div class="item icon3">
-						<img src="images/Icon-Locked.png" class="img-responsive">
-						</div>
-					</div>
-					<div class="col-sm-10 col-xs-10 features">
-						<div class="row"><h4>Secure Encryption</h4></div>
-						<div class="row"><p>Proin iaculis purus consequat sem cure iaculis purus.</p></div>
-					</div>
-				</div>
-				<div class="row bottomline"><p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in.</p>
-				<a href="#details" class="ref">VIEW DETAILS <i class="fa fa-arrow-right"></i></a></div>
 			</div>
 			<div class="col-md-7 col-sm-7 col-xs-12 tphone"><img src="images/tphone.jpg" class="img-responsive"></div>
 		</div>
@@ -150,53 +129,51 @@
 
 <!--Culture & values section-->
 	<div class="container-fluid text-center" id="culture">
-		<h2>CULTURE & VALUES</h2>
-		<p class="subtitle_text" id="p3">Proin iaculis purus consequat cure.</p>
-		<div class="row values">
-	      <div class="col-md-4 col-sm-12 icon1">
-	          <div class="icons"><img src="images/Icon-Music.png" class="img-responsive"></div>
-	          <h4>WORK-LIFE BALANCE</h4>
-	          <p class="description">Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-	      </div>
-	      <div class="col-md-4 col-sm-12 icon2">
-	          <div class="icons"><img src="images/Icon-Graph.png" class="img-responsive"></div>
-	          <h4>QUALITY OVER QUANTITY</h4>
-	          <p class="description">Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt</p>
-	      </div>
-	      <div class="col-md-4 col-sm-12 icon3">
-	          <div class="icons"><img src="images/Icon-Star.png" class="img-responsive"></div>
-	          <h4>DELIVER EXCELLENCE</h4>
-	          <p class="description">Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt</p>
-	      </div>
+		<div class="text">
+			<h2 class="heading">CULTURE & VALUES</h2>
+			<p class="subtitle_text">Proin iaculis purus consequat cure.</p>
+			<div class="row values">
+		      <div class="col-md-4 col-sm-12 icon1">
+		          <div class="icons"><img src="images/Icon-Music.png" class="img-responsive"></div>
+		          <h4>WORK-LIFE BALANCE</h4>
+		          <p class="description">Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+		      </div>
+		      <div class="col-md-4 col-sm-12 icon2">
+		          <div class="icons"><img src="images/Icon-Graph.png" class="img-responsive"></div>
+		          <h4>QUALITY OVER QUANTITY</h4>
+		          <p class="description">Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt</p>
+		      </div>
+		      <div class="col-md-4 col-sm-12 icon3">
+		          <div class="icons"><i class="fa fa-star-o star"></i></div>
+		          <h4>DELIVER EXCELLENCE</h4>
+		          <p class="description">Proin iaculis purus consequat sem cure digni ssim. Donec portittora entum suscipit aenean rhoncus posuere odio in tincidunt</p>
+		      </div>
+		    </div>
 	    </div>
-
 	</div>
 
 <!--clients-->
 	<div class="container-fluid text-center" id="clients">
-		<h2>OUR AWESOME CLIENTS</h2>
-		<p class="subtitle_text">Proin iaculis purus consequat cure.</p>
-		<div class="row grid" id="grid1">
-			<div class="col-md-3 col-sm-4 col-xs-12 item1"><div class="container-fluid item"></div></div>
-
-			<div class="col-md-9 col-sm-8 col-xs-12 item2">
-				<div class="tooltext">
-					<p class="text">"Proin iaculis purus consequat sem cure digni ssim donec portittora entum suscipit aenean rhoncus"</p>
-					<span class="clientname">-Jamie Richardson, Founder of Cocoa Media</span>
+		<h2 class="heading">OUR AWESOME CLIENTS</h2>
+		<p class="subtitle_text">Proin iaculis purus consequat sem cure.</p>
+			<div class="row grid" id="grid1">
+				<div class="col-sm-4 col-sm-offset-0 col-xs-12 item1"><div class="item">&nbsp;</div></div>
+				<div class="col-sm-8 col-sm-offset-0 col-xs-12 item2">
+					<div class="tooltext">
+						<p class="text">"Proin iaculis purus consequat sem cure digni ssim donec portittora entum suscipit aenean rhoncus"</p>
+						<span class="clientname">-Jamie Richardson, Founder of Cocoa Media</span>
+					</div>
 				</div>
 			</div>
-		</div>
-
-
-		<div class="flex-container grid" id="grid2">
-			<div class="col-md-9 col-sm-8 col-xs-12 item3">	
-				<div class="tooltext">
-					<p class="text">"Proin iaculis purus consequat sem cure digni ssim donec portittora entum suscipit aenean rhoncus"</p>
-					<span class="clientname">-Kim Thompson, Founder of Rainel</span>
+			<div class="row grid" id="grid2">
+				<div class="col-sm-4 col-sm-push-8 col-sm-offset-0 col-xs-12 item4"><div class="item">&nbsp;</div></div>
+				<div class="col-sm-8 col-sm-pull-4 col-sm-offset-0 col-xs-12 item3">
+					<div class="tooltext">
+						<p class="text">"Proin iaculis purus consequat sem cure digni ssim donec portittora entum suscipit aenean rhoncus"</p>
+						<span class="clientname">-Kim Thompson, Founder of Rainel</span>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-4 col-xs-12 item4"><div class="container-fluid item"></div></div>
-		</div>
 	</div>
 
 <!--next project-->
@@ -206,68 +183,55 @@
 	</div>
 
 <!--logos-->
-	<div class="container-fluid text-center" id="logos">
-	<div class="row">
-		<div class="col-md-3 col-sm-6"><img src="images/Envato.png" class="img-responsive logo"></div>
-		<div class="col-md-3 col-sm-6"><img src="images/WordPress.png" class="img-responsive logo"></div>
-		<div class="col-md-3 col-sm-6"><img src="images/Tuts+.png" class="img-responsive logo"></div>
-		<div class="col-md-3 col-sm-6"><img src="images/Microlancer.png" class="img-responsive logo"></div>
-	</div>		
+	<div class="container text-center" id="logos">
+		<div class="col-md-3 col-xs-6 logo"><img src="images/Envato.png" class="img-responsive "></div>
+		<div class="col-md-3 col-xs-6 logo"><img src="images/WordPress.png" class="img-responsive"></div>
+		<div class="col-md-3 col-xs-6 logo"><img src="images/Tuts+.png" class="img-responsive"></div>
+		<div class="col-md-3 col-xs-6 logo"><img src="images/Microlancer.png" class="img-responsive"></div>
 	</div>
 
 <!--top-footer-->
-	<div class="row topfooter">
+	<div class="container-fluid topfooter">
 		<div class="col-sm-4 columns" id="col1">
 			<header>CONTACT US</header>
-			<div class="grid-container-fluid">
-				<div class="i2"><i class="glyphicon glyphicon-map-marker"></i></div>
-				<div><p>55 Main St.<br>Toronto, ON<br>M1H 3A5</></div>
-				<div class="i2"><i class="material-icons">phone_iphone</i></div>
-				<div><p>(416) 555-5252</p></div>
-				<div class="i2"><i class="glyphicon glyphicon-envelope"></i></div>
-				<div><p>hello@treehouse.com</p></div>
-			</div>
+			<ul class="list">
+				<li class="info location">55 Main St.<br>Toronto, ON<br>M1H 3A5</li>
+				<li class="info call">(416) 555-5252</li>
+				<li class="info website">hello@treehouse.com</li>
+			</ul>
 		</div>
 		<div class="col-sm-4 columns" id="col2">
 			<header>LATEST POSTS</header>
-			<div class="grid-container-fluid">
-				<div class="i2"><i class="fa fa-newspaper-o"></i></div>
-				<div class="ref"><a href="#toronto">Made With Love In Toronto</a></div>
-				<div class="i2"><i class="fa fa-photo"></i></div>
-				<div class="ref"><a href="#startup">Startup News & Emerging Tech</a></div>
-				<div class="i2"><i class="fa fa-newspaper-o"></i></div>
-				<div class="ref"><a href="#bitcoin">Bitcoin Will Soon Rule The World</a></div>
-				<div class="i2"><i class="fa fa-newspaper-o"></i></div>
-				<div class="ref"><a href="#rise">Wearable Technology On The Rise</a></div>
-				<div class="i2"><i class="glyphicon glyphicon-play"></i></div>
-				<div class="ref"><a href="#learndesign">Learn Web Design In 30 Days!</a></div>
-			</div>
+			<ul class="list">
+				<li class="info news"><a href="#toronto" class="ref">Made With Love In Toronto</a></li>
+				<li class="info pic"><a href="#startup" class="ref">Startup News & Emerging Tech</a></li>
+				<li class="info news"><a href="#bitcoin" class="ref">Bitcoin Will Soon Rule The World</a></li>
+				<li class="info news"><a href="#rise" class="ref">Wearable Technology On The Rise</a></li>
+				<li class="info play"><a href="#learndesign" class="ref">Learn Web Design In 30 Days!</a></li>
+			</ul>
 		</div>
 		<div class="col-sm-4 columns" id="col3">
 			<header>LATEST TWEETS</header>
-			<div class="grid-container-fluid">
-				<div class="i2"><i class="fa fa-twitter"></i></div>
-				<div class="ref"><a href="#confucius">Confucius: Life is really simple, but we insist on making it complicated<br><span class="quote">#famousquotes</span><br><span class="mini">8 minutes ago</span></a></div>
-				<div class="i2"><i class="fa fa-twitter"></i></div>
-				<div class="ref"><a href="#grab">Grab the Free Treehouse web template at FreebiesXpress!<br><span class="quote">#freebies #templates</span><br><span class="mini">2 days ago</span></a></div>
-			</div>
+			<ul class="list">
+				<li class="info tweets">
+				<a href="#confucius" class="ref">Confucius: Life is really simple, but we insist on making it complicated</a><br><span class="quote">#famousquotes</span><br><span class="mini">8 minutes ago</span></li>
+				<li class="info tweets"><a href="#grab" class="ref">Grab the Free Treehouse web template at FreebiesXpress!</a><br><span class="quote">#freebies #templates</span><br><span class="mini">2 days ago</span></li>
+			</ul>
 		</div>
 	</div>
 
 <!--bottom footer-->
 	<div class="container-fluid bottom_footer">
-		<div class="row">
-			<div class="col-md-4 col-sm-6 col-xs-12 Copyright">&copy Copyright 2014 FreebiesXpress.com</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				<div class="follow">
-					<div class="fa fa-twitter"></div>
-					<div class="fa fa-facebook"></div>
-					<div class="fa fa-pinterest-p"></div>
-					<div class="fa fa-google-plus"></div>
-				</div>
+			<div class="col-md-4 col-md-push-4 col-sm-6 col-sm-push-6 col-xs-12">
+				<ul class="follow">
+					<li><a href="#1" class="fa fa-twitter"></a></li>
+					<li><a href="#2" class="fa fa-facebook"></a></li>
+					<li><a href="#3" class="fa fa-pinterest-p"></a></li>
+					<li><a href="#4" class="fa fa-google-plus"></a></li>
+				</ul>
 			</div>
+			<div class="col-md-4 col-md-pull-4 col-sm-6 col-sm-pull-6 col-xs-12 Copyright">&copy Copyright 2014 FreebiesXpress.com</div>
 			<div class="col-md-4"></div>
-		</div>
 	</div>
 
 </body>

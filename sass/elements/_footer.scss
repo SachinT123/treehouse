@@ -1,0 +1,116 @@
+//top-footer
+.topfooter{
+  background-color: $opaque2;
+  color: $footercolor;
+  font-size: 16px;
+  padding: 5% 15%;
+  @media screen and (max-width: $large){font-size: 14px;padding: 5% 10%;}
+  @media screen and (max-width: $medium+1){font-size: 13px;padding: 5% 7%;}
+  @media screen and (max-width: $small){font-size: 16px;padding: 5% 7.5%;}
+  @media screen and (max-width: $x-small){font-size: 12px;}
+  .columns{
+      padding-bottom: 1.5em;
+      font-family: $not_base;
+      header{
+        background-color: inherit;
+        color: $white;
+        font-weight: 700;
+        padding-bottom: 1.1em;
+        font-size: 18px;
+        font-family: $base;
+        @media screen and (max-width: $small){font-size: 20px;}
+        @media screen and (max-width: $x-small){font-size: 16px;}
+      }
+      .list{
+        list-style-type: none;
+        padding-left: 35px;
+        .info{
+          margin-bottom: 1em;
+          .ref{
+            color: inherit;
+          }
+          .quote{
+            font-weight: 700;
+          }
+          .mini{
+            font-size: 12px;
+            @media screen and (max-width: $medium+1){font-size: 11px;}
+            @media screen and (max-width: $small){font-size: 13px;}
+            @media screen and (max-width: $x-small){font-size: 10px;}
+          }
+        }
+        .info:hover{
+          .ref{
+            color: $green!important;
+            text-decoration: none;
+          }
+        }
+
+        .info::before{
+          width: 30px;
+          height: auto;
+          position: absolute;
+          font-size: 25px;
+          left: 0;
+          transform: translate(50%,-20%);
+          @media screen and (max-width: $large){transform: translate(50%,-20%) scale(0.8);}
+          @media screen and (max-width: $medium+1){transform: translate(50%,-20%) scale(0.75);}
+          @media screen and (max-width: $x-small){transform: translate(50%,-25%) scale(0.6);}
+        }
+        .location::before{
+          font-family: $icon-family;
+          content: "\f041";
+          font-size: 35px;
+        }
+        .call::before{content: url('../images/iphone.png');}
+        .website::before{font-family: $icon-family; content: "\f0e0";}
+        .news::before{content: url('../images/news.png');}
+        .pic::before{font-family: $icon-family;content: "\f03e";}
+        .play::before{font-family: $icon-family;content: "\f04b";}
+        .tweets::before{font-family: $icon-family;content: "\f099";}
+      }
+    }
+  }
+
+
+//bottom footer
+.bottom_footer{
+  padding: 2em 13em;
+  margin-top: 0;
+  text-align: center;
+  @media screen and (max-width: $large){padding: 2em 10em;}
+  @media screen and (max-width: $medium2){padding: 2em 7em;}
+  @media screen and (max-width: $small+1){padding: 2em 6.5em;}
+  @media screen and (max-width: $x-small2){padding: 1em 3em;}
+
+
+  .Copyright{
+    padding: 0.75em 0;
+    font-size: 14px;
+    color: #555555;
+    line-height: 22px;
+    @media screen and (max-width: $large){font-size: 13px;}
+    @media screen and (max-width: $x-small2){font-size: 10px; padding-bottom: 1em;}
+  }
+  .follow{
+      list-style: none;
+      padding: 0;
+      li{
+        display: inline-block;
+      .fa{
+        text-decoration: none;
+        font-size: 20px;
+        height: 2.05em;
+        color: $white;
+        width: 2.05em;
+        padding: 0.5em;
+        background-color: $opaque2;
+        border-radius: 50%;
+      }
+      .fa-twitter:hover{background-color: #00aced;}
+      .fa-facebook:hover{background-color: #3b5998;}
+      .fa-pinterest-p:hover{background-color: #cb2028;}
+      .fa-google-plus:hover{background-color: #da2713;}
+    }
+  }
+}
