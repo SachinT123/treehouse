@@ -52,22 +52,22 @@
           position: absolute;
           font-size: 25px;
           left: 0;
+          font-family: $icon-family;
           transform: translate(50%,-20%);
           @media screen and (max-width: $large){transform: translate(50%,-20%) scale(0.8);}
           @media screen and (max-width: $medium+1){transform: translate(50%,-20%) scale(0.75);}
           @media screen and (max-width: $x-small){transform: translate(50%,-25%) scale(0.6);}
         }
         .location::before{
-          font-family: $icon-family;
           content: "\f041";
           font-size: 35px;
         }
         .call::before{content: url('../images/iphone.png');}
-        .website::before{font-family: $icon-family; content: "\f0e0";}
+        .website::before{content: "\f0e0";}
         .news::before{content: url('../images/news.png');}
-        .pic::before{font-family: $icon-family;content: "\f03e";}
-        .play::before{font-family: $icon-family;content: "\f04b";}
-        .tweets::before{font-family: $icon-family;content: "\f099";}
+        .pic::before{content: "\f03e";}
+        .play::before{content: "\f04b";}
+        .tweets::before{content: "\f099";}
       }
     }
   }
