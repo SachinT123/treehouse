@@ -100,6 +100,7 @@
       -webkit-transition-property: all;
       &:hover{
         box-shadow: 0 -2px 0 0 $green, 0 2px 0 0 $green;
+        @media screen and (max-width: $medium){box-shadow: none;}
       }
       cursor: pointer;
       .icons{height: 4em;}
@@ -351,7 +352,6 @@
       @media screen and (max-width: $small+1){margin: 7% 10%;}
       .card{
         @media screen and (max-width: $medium){padding-top: 1em; padding-bottom: 1em;}
-        &:hover{ @media screen and (max-width: $medium){box-shadow: 0 -2px 0 0 $green, 0 2px 0 0 $green;} }
         .icons{
             position: relative;
             border-radius: 50%;
