@@ -3,20 +3,30 @@
   background-image: url('../images/Background.png');
   position: relative;
   background-size: cover;
+  padding: 0;
+  width: auto;
   .back_1{
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
   }
   .text{
     position: relative;
     text-align: center;
-    padding: 7.5% 18%;
+    padding: 7% 18%;
+    background: rgba(0, 0, 0, 0.4);
     @media screen and (max-width:$x-small){padding: 7.5%;}
-
     .top_header{
         color: $white;
         font-weight: $heavy;
@@ -37,19 +47,17 @@
       @media screen and (max-width:$x-small3){font-size: 12px;}
     }
     .button1{
-      padding-top: 10%;
-      @media screen and (max-width: $large){
-        padding-top: 6%;
-      }
-      button{
-        width: 15em;height: 4.5em;
-        @media screen and (max-width: $medium+1){font-size: 11px!important;}
-        @media screen and (max-width: $small+1){font-size: 10px!important;}
-        @media screen and (max-width: $x-small){font-size: 8px!important;width: 14em;height: 4em;}
-      }
+      margin-top: 7%;
+      width: 15em;height: 4.5em;
+      @media screen and (max-width: $large){margin-top: 6%;}
+      @media screen and (max-width: $medium+1){font-size: 12px!important;}
+      @media screen and (max-width: $small+1){font-size: 10px!important;}
+      @media screen and (max-width: $x-small){font-size: 8px!important;width: 14em;height: 4em;}
     }
   }
 }
+
+.title:hover,.title:focus{.back_1{background: rgba(0, 0, 0, 0.5);-webkit-transform: scaleY(1);transform: scaleY(1);}}
 
 
 //////////////////////////////////////services section
@@ -83,16 +91,20 @@
     @media screen and (max-width: $x-small){font-size: 14px;padding-bottom: 2em;}
   }
   .pro{
-    .column{
-      padding-bottom: 3em;
-      .icons{
-        height: 4em;
+    .cardInner{
+      position: relative;
+      padding-bottom: 2em;padding-top: 2em;
+      transition-duration: 1s;
+      transition-property: all;
+      -webkit-transition-duration: 1s;
+      -webkit-transition-property: all;
+      &:hover{
+        box-shadow: 0 -2px 0 0 $green, 0 2px 0 0 $green;
       }
+      cursor: pointer;
+      .icons{height: 4em;}
     }
-
-    img{
-      display: inline-block;
-    }
+    img{display: inline-block;}
     p{
       font-size: 15px;
       @media screen and (max-width: $large){font-size: 14px;}
@@ -111,18 +123,20 @@
   position: relative;
   padding: 0;
   height: auto;
-  #image1{
+  .gear_image{
+    position: absolute;
+    -webkit-animation: rotation 25s infinite;
+    animation: rotation 25s infinite;
     width: 27.8%;
     top: 50%;
-    transform: translate(60%,-50%);
-    position: absolute;
+    left: 0;
+    transition-property: all;
     @media screen and (max-width: $small+1){visibility: hidden;}
   }
   #back{
     background-image: url('../images/Background2.png');
     width: 69.3%;
     height: 100%;
-    z-index: 9;
     float: right;
     position: relative;
     background-size: cover;
@@ -139,7 +153,6 @@
       margin: 10%;
       position: relative;
       @media screen and (max-width: $x-small2){margin: 7.5%;}
-
       #header2{
         font-size: 32px;
         color: $white;
@@ -170,32 +183,30 @@
             margin: 1em;
             @media screen and (max-width: $small){ margin: 0.75em 1em;}
             @media screen and (max-width: $x-small){ margin: 0.5em 1em;}
-          }
-          .check::before{
-            font-family: "Material Icons";
-            content: "done";
-            position: absolute;
-            font-size: inherit;
-            left: 0;
-            text-align: center;
-            width: 33px;
-            height: 32px;
-            border-style: solid;
-            border-radius: 50%;
-            border-color: inherit;
-            border-width: 1px;
-            @media screen and (max-width: $medium+1){transform: scale(0.8);}
-            @media screen and (max-width: $x-small){transform: scale(0.7);}
+            &::before{
+              font-family: "Material Icons";
+              content: "done";
+              position: absolute;
+              font-size: inherit;
+              left: 0;
+              text-align: center;
+              width: 33px;
+              height: 32px;
+              border-style: solid;
+              border-radius: 50%;
+              border-color: inherit;
+              border-width: 1px;
+              @media screen and (max-width: $medium+1){transform: scale(0.8);}
+              @media screen and (max-width: $x-small){transform: scale(0.7);}
+            }
           }
         }
         .button2{
           width: 12em;
-          font-size: 14px;
-          transform: scaleY(1.0783);
           margin-top: 2em;
           @media screen and (max-width: $medium+1){font-size: 12px!important;margin-top: 1em;}
           @media screen and (max-width: $x-small){font-size: 10px!important;margin-top: 0;}
-          @media screen and (max-width: $x-small2){font-size: 7px!important;}
+          @media screen and (max-width: $x-small2){font-size: 8px!important;}
         }
       }
     }
@@ -224,10 +235,9 @@
     }
   }
   .subhead{
-    padding-left: 16.6%;padding-right: 0;
+    padding-left: 16.6%;
     @media screen and (max-width: $large){padding-left:12.5%;padding-bottom: 7%;}
     @media screen and (max-width: $medium+1){padding-left:10%;}
-    @media screen and (max-width: $small){padding-bottom: 0;}
     .mid{
       @media screen and (max-width: $small){padding-right: 10%;}
       h4{
@@ -266,33 +276,27 @@
             padding-bottom: 5%;
             @media screen and (max-width: $small){padding-bottom: 2.5%;}
             @media screen and (max-width: $x-small){padding-bottom: 0;}
+            &::before{
+              width: 67px;
+              height: 67px;
+              text-align: center;
+              padding-top: 10px;
+              left: 3%;
+              transform: translateY(-20%);
+              border-radius: 50%;
+              border-color: $opaque;
+              border-style: solid;
+              position: absolute;
+              @media screen and (max-width: $large){transform: scale(0.9);}
+              @media screen and (max-width: $medium+1){transform: scale(0.8);}
+              @media screen and (max-width: $small){transform: scale(0.9);padding-top: 10px;}
+              @media screen and (max-width: $x-small){transform: scale(0.7);}
+              @media screen and (max-width: $x-small3){transform: translate(0,-10%) scale(0.7)}
+            }
           }
-          .features::before{
-            width: 67px;
-            height: 67px;
-            text-align: center;
-            padding-top: 10px;
-            left: 3%;
-            transform: translateY(-20%);
-            border-radius: 50%;
-            border-color: $opaque;
-            border-style: solid;
-            position: absolute;
-            @media screen and (max-width: $large){transform: scale(0.9);}
-            @media screen and (max-width: $medium+1){transform: scale(0.8);}
-            @media screen and (max-width: $small){transform: scale(0.9);padding-top: 10px;}
-            @media screen and (max-width: $x-small){transform: scale(0.7);}
-          }
-          .feature1::before{
-            content: url('../images/Icon-Basket.png');
-          }
-          .feature2::before{
-            content: url('../images/Icon-Laptop.png');
-          }
-          .feature3::before{
-            content: url('../images/Icon-Locked.png');
-          }
-
+          .feature1::before{content: url('../images/Icon-Basket.png');}
+          .feature2::before{content: url('../images/Icon-Laptop.png');}
+          .feature3::before{content: url('../images/Icon-Locked.png');}
       }
 
       .bottomline{
@@ -305,22 +309,21 @@
           font-weight: $heavy;
           font-size: inherit!important;
           font-family: $base;
-        }
-        .ref:hover{
-          text-decoration: none;
-          color: $opaque2;
+          &:hover{
+            text-decoration: none;
+            color: $opaque2;
+          }
         }
       }
     }
     .tphone{
-      padding-right: 0;
       @media screen and (max-width: $small){margin: 0;padding: 0}}
   }
 }
 
 
 ///////////////////////////////////////culture and values section
-#culture{
+.culture{
   background-color: $background2;
   margin: 0;
   width: 100%;
@@ -346,21 +349,25 @@
     .values{
       margin: 5% 12.5% 0;
       @media screen and (max-width: $small+1){margin: 7% 10%;}
-      .icons{
-          position: relative;
-          border-radius: 50%;
-          border-style: solid;
-          border-color: $base_font_color;
-          .star, img{
-            font-size: 60px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
-          }
-          height: 6em;
-          width: 6em;
-          display: inline-block;
+      .card{
+        @media screen and (max-width: $medium){padding-top: 1em; padding-bottom: 1em;}
+        &:hover{ @media screen and (max-width: $medium){box-shadow: 0 -2px 0 0 $green, 0 2px 0 0 $green;} }
+        .icons{
+            position: relative;
+            border-radius: 50%;
+            border-style: solid;
+            border-color: $base_font_color;
+            .star, img{
+              font-size: 60px;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%,-50%);
+            }
+            height: 6em;
+            width: 6em;
+            display: inline-block;
+        }
       }
       .icon1::after{
           content: "";
@@ -368,16 +375,18 @@
           border-top: 2px solid;
           width: 50%;
           top: 2.5em;
-          transform: translateX(50%);
+          right: 0;
+          transform: translate(50%,0);
           @media screen and (max-width: $medium+1){visibility: hidden;}
       }
-      .icon2::after{
+      .icon3::before{
           content: "";
           position: absolute;
           border-top: 2px solid;
           width: 50%;
           top: 2.5em;
-          transform: translate(50%, 0);
+          left: 0;
+          transform: translate(-50%, 0);
           @media screen and (max-width: $medium+1){visibility: hidden;}
       }
       .description{
@@ -392,7 +401,7 @@
 
 
 ///////////////////////////////////////////clients
-#clients{
+.clients{
   padding: 7% 0;
   font-family: RobotoSlab;
   .heading{
@@ -422,6 +431,7 @@
           border-radius: 50%;
           height: 221px;
           width: 221px;
+          object-fit: cover;
           @media screen and (max-width: $large){width:192px;height:192px;}
           @media screen and (max-width: $medium+1){width: 176px;height: 176px;}
         }
@@ -453,39 +463,33 @@
             @media screen and (max-width: $large){font-size: 15px;}
             @media screen and (max-width: $medium){font-size: 14px;}
             @media screen and (max-width: $x-small){font-size: 12px;}
-      }
+          }
+          &::after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            transform: translateY(-50%);
+            @media screen and (max-width: $small){visibility: hidden;}
+          }
         }
       }
       .item2{
         .tooltext::after{
-          content: '';
-          position: absolute;
           left: -2%;
-          top: 50%;
-          width: 0;
-          height: 0;
-          border: 20px solid transparent;
           border-right-color: $background2;
           border-left: 0;
-          transform: translateY(-50%);
           margin-left: 0;
-          @media screen and (max-width: $small){visibility: hidden;}
         }
       }
       .item3{
         .tooltext::after{
-          content: '';
-          position: absolute;
           right: -2%;
-          top: 50%;
-          width: 0;
-          height: 0;
-          border: 20px solid transparent;
           border-left-color: $background2;
           border-right: 0;
-          transform: translateY(-50%);
           margin-right: 0;
-          @media screen and (max-width: $small){visibility: hidden;}
         }
       }
     }
@@ -493,7 +497,7 @@
 
 
 //////////////////////////////////////////panel
-#talknext{
+.talknext{
     width: 100%;
     height: auto;
     background-color: $green;
@@ -523,14 +527,12 @@
       @media screen and (max-width: $small+1){font-size: 15px;}
       @media screen and (max-width: $x-small){font-size: 12px;}
     }
-    .button3:hover{
-        color: $green!important;
-    }
+    .button3:hover{color: $green!important;}
   }
 
 
 //////////////////////////////////////////logos
-#logos{
+.logos{
     padding: 2em 0;
     margin-top: 0;
     width: 54.6%;
@@ -539,6 +541,12 @@
     .logo{
       padding: 2%;
       text-align: -webkit-center;
+      transition-duration: 1s;
+      transition-property: all;
+      -webkit-transition-duration: 1s;
+      -webkit-transition-property: all;
+      filter: grayscale(1);
+      opacity: 0.75;
+      &:hover{filter: opacity(1); transform: scale(1.1);}
     }
-
   }

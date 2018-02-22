@@ -26,48 +26,69 @@
         padding-left: 35px;
         .info{
           margin-bottom: 1em;
-          .ref{
-            color: inherit;
-          }
-          .quote{
-            font-weight: 700;
-          }
+          .ref{color: inherit;}
+          .quote{font-weight: 700;}
           .mini{
             font-size: 12px;
             @media screen and (max-width: $medium+1){font-size: 11px;}
             @media screen and (max-width: $small){font-size: 13px;}
             @media screen and (max-width: $x-small){font-size: 10px;}
           }
-        }
-        .info:hover{
-          .ref{
-            color: $green!important;
-            text-decoration: none;
+          &:hover{
+            .ref{
+              color: $green!important;
+              text-decoration: none;
+            }
+          }
+          &::before{
+            width: 30px;
+            height: auto;
+            position: absolute;
+            font-size: 25px;
+            left: 0;
+            font-family: $icon-family;
+            transform: translate(50%,-20%);
+            transition-duration: 1s;
+            transition-property: all;
+            -webkit-transition-duration: 1s;
+            -webkit-transition-property: all;
+            @media screen and (max-width: $large){transform: translate(50%,-20%) scale(0.8);}
+            @media screen and (max-width: $medium+1){transform: translate(50%,-20%) scale(0.75);}
+            @media screen and (max-width: $x-small){transform: translate(50%,-25%) scale(0.6);}
           }
         }
-
-        .info::before{
-          width: 30px;
-          height: auto;
-          position: absolute;
-          font-size: 25px;
-          left: 0;
-          font-family: $icon-family;
-          transform: translate(50%,-20%);
-          @media screen and (max-width: $large){transform: translate(50%,-20%) scale(0.8);}
-          @media screen and (max-width: $medium+1){transform: translate(50%,-20%) scale(0.75);}
-          @media screen and (max-width: $x-small){transform: translate(50%,-25%) scale(0.6);}
+        .location{
+          &::before{
+            content: "\f041";
+            font-size: 35px;
+          }
+          &:hover::before{
+            opacity: 0;
+            color: #da2713;
+            -webkit-animation: drop 0.5s ease-in-out;
+            animation: drop 0.5s ease-in-out;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+          }
         }
-        .location::before{
-          content: "\f041";
-          font-size: 35px;
+        .call{
+          &::before{content: url('../images/iphone.png');}
+          &:hover::before{
+            -webkit-animation:ring 1s linear 1;
+            animation: ring 1s linear 1;
+          }
         }
-        .call::before{content: url('../images/iphone.png');}
-        .website::before{content: "\f0e0";}
+        .website{
+          &::before{ content: "\f0e0";}
+          &:hover::before{transform:rotate(5deg) translate(50%,-20%);-webkit-transform:translate(50%,-20%) rotate(5deg);}
+        }
         .news::before{content: url('../images/news.png');}
         .pic::before{content: "\f03e";}
         .play::before{content: "\f04b";}
-        .tweets::before{content: "\f099";}
+        .tweets{
+          &::before{content: "\f099";}
+          &:hover::before{color: #00aced; transform: scale(1.1) translate(50%,-20%);}
+        }
       }
     }
   }
@@ -97,7 +118,7 @@
       padding: 0;
       li{
         display: inline-block;
-        padding-right: 0.5em;
+        padding-right:0.25em;
       .fa{
         text-decoration: none;
         font-size: 20px;
@@ -107,6 +128,14 @@
         padding: 0.5em;
         background-color: $opaque2;
         border-radius: 50%;
+        transition-duration: 1s;
+        transition-property: all;
+        -webkit-transition-duration: 1s;
+        -webkit-transition-property: all;
+      }
+      .fa:hover{
+        transform: translateY(-25%);
+        -webkit-transform: translateY(-25%);
       }
       .fa-twitter:hover{background-color: #00aced;}
       .fa-facebook:hover{background-color: #3b5998;}
