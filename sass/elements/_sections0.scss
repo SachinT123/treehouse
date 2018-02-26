@@ -198,7 +198,11 @@
               @media screen and (max-width: $medium+1){transform: scale(0.8);}
               @media screen and (max-width: $x-small){transform: scale(0.7);}
             }
-            &:hover,&:focus{ transform: scaleX(1.05); cursor: default; &::before{left: -3em;}}
+            &:hover,&:focus{
+              transform: scaleX(1.05) ;
+              cursor: pointer;
+              &::before{left: -3em;}
+            }
           }
         }
         .button2{
@@ -293,7 +297,11 @@
               @media screen and (max-width: $x-small){transform: scale(0.7);}
               @media screen and (max-width: $x-small3){transform: translate(0,-10%) scale(0.7)}
             }
-            &:hover,&:focus{ transform: translateY(5%) ; cursor: default; &::before{left: -2.5em;} }
+            &:hover,&:focus{
+              transform: translateY(5%) ;
+              cursor: pointer;
+              &::before{left: -2.5em;}
+            }
           }
           .feature1::before{content: url('../images/Icon-Basket.png');}
           .feature2::before{content: url('../images/Icon-Laptop.png');}
