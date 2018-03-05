@@ -9,11 +9,9 @@
   transform: scale(1.0783,1.0783);
   text-shadow: 0px 1px 1px rgba(0,0,0,0.7);
   background-color: $green;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   &:hover{
-    transition: 0.3s ease;
-    transition-property: all;
-    -webkit-transition: 0.3s ease;
-    -webkit-transition-property: all;
     background-color: $white;
     color: $opaque2;
   }

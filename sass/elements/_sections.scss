@@ -11,21 +11,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.4);
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    transition: 1s ease;
-    -webkit-transition: 1s ease;
+    background: rgba(0, 0, 0, 0.6);
   }
   .text{
     position: relative;
     text-align: center;
     padding: 7% 18%;
-    background: rgba(0, 0, 0, 0.4);
     @media screen and (max-width:$x-small){padding: 7.5%;}
     .top_header{
         color: $white;
@@ -55,7 +46,6 @@
       @media screen and (max-width: $x-small){font-size: 8px!important;width: 14em;height: 4em;}
     }
   }
-  &:hover,&:focus{.back_1{background: rgba(0, 0, 0, 0.5);-webkit-transform: scaleY(1);transform: scaleY(1);}}
 }
 
 //////////////////////////////////////services section
@@ -198,7 +188,6 @@
               @media screen and (max-width: $medium+1){transform: scale(0.8);}
               @media screen and (max-width: $x-small){transform: scale(0.7);}
             }
-            &:hover,&:focus{ transform: scaleX(1.05); cursor: default; &::before{left: -3em;}}
           }
         }
         .button2{
@@ -293,7 +282,6 @@
               @media screen and (max-width: $x-small){transform: scale(0.7);}
               @media screen and (max-width: $x-small3){transform: translate(0,-10%) scale(0.7)}
             }
-            &:hover,&:focus{ transform: translateY(5%) ; cursor: default; &::before{left: -2.5em;} }
           }
           .feature1::before{content: url('../images/Icon-Basket.png');}
           .feature2::before{content: url('../images/Icon-Laptop.png');}
@@ -304,15 +292,18 @@
         width: 23em;
         @media screen and (max-width: $large){width: 20.5em;}
         @media screen and (max-width: $small){width: auto;}
-
         .ref{
           color: $green;
           font-weight: $heavy;
           font-size: inherit!important;
           font-family: $base;
+          -webkit-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+          .fa{transition: transform 0.5s ease-out;-webkit-transition: transform 0.5s ease-out;}
           &:hover{
             text-decoration: none;
             color: $opaque2;
+            .fa{transform: translateX(75%);}
           }
         }
       }
@@ -345,7 +336,6 @@
       font-weight: $heavy;
       margin-top: 1em;
       @media screen and (max-width: $large){font-size: 16px;}
-
     }
     .values{
       margin: 5% 12.5% 0;
