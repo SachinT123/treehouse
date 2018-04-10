@@ -90,7 +90,7 @@
         .play::before{content: "\f04b";}
         .tweets{
           &::before{content: "\f099";}
-          &:hover::before{color: #00aced; transform: scale(1.1) translate(50%,-20%);}
+          &:hover::before{color: #00aced;}
         }
       }
     }
