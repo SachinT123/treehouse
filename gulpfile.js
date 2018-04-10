@@ -6,10 +6,10 @@ var htmlmin = require('gulp-htmlmin');
 gulp.task('css',function(){
 
   gulp.src([
-    './stylesheets/aos.css',
     './stylesheets/bootstrap.css',
     './stylesheets/combined_css.css',
-    './stylesheets/app.css'
+    './stylesheets/app.css',
+    './stylesheets/aos.css'
   ])
     .pipe(concat('app.css'))
     .pipe(cssMin())
@@ -19,8 +19,8 @@ gulp.task('css',function(){
 
 gulp.task('scripts', function(){
   gulp.src([
-    './scripts/aos.js',
     './scripts/jquery.js',
+    './scripts/aos.js',
     './scripts/bootstrap.js'
   ])
   .pipe(concat('libs.js'))

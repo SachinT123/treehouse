@@ -48,9 +48,9 @@
             left: 0;
             font-family: $icon-family;
             transform: translate(50%,-20%);
-            transition-duration: 1s;
+            transition-duration: 0.5s;
             transition-property: all;
-            -webkit-transition-duration: 1s;
+            -webkit-transition-duration: 0.5s;
             -webkit-transition-property: all;
             @media screen and (max-width: $large){transform: translate(50%,-20%) scale(0.8);}
             @media screen and (max-width: $medium+1){transform: translate(50%,-20%) scale(0.75);}
